@@ -1,0 +1,391 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+$dark: #171717;
+$light: #f5f0f0;
+$gray: #333;
+$red: rgb(214, 22, 64);
+
+html {
+	font-size: 62.5%;
+	scroll-behavior: smooth;
+}
+body {
+	background-color: $light;
+	font-family: "Montserrat", sans-serif;
+}
+
+// pływający rzycisk
+
+.contact__box {
+	position: fixed;
+	bottom: 20px;
+	right: 10px;
+	background-color: #333;
+	border-radius: 40px;
+	text-align: center;
+	padding: 1em;
+	height: 30em;
+	width: 30em;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	transition: transform 0.7s;
+	transform: translate(150%, 150%) scale(0);
+
+	&-tittle {
+		margin-bottom: 2em;
+		color: rgb(214, 22, 64);
+		font-size: 2rem;
+	}
+
+	&-phone {
+		font-size: 1.5rem;
+		margin-bottom: 3em;
+		a {
+			text-decoration: none;
+			color: rgb(214, 22, 64);
+			padding: 1.75em;
+			cursor: pointer;
+		}
+		i {
+			color: rgb(214, 22, 64);
+			margin-right: -1.5em;
+		}
+	}
+	&-email {
+		font-size: 1.5rem;
+		margin-bottom: 1.2em;
+
+		a {
+			text-decoration: none;
+			color: rgb(214, 22, 64);
+			padding: 1em;
+			cursor: pointer;
+		}
+		i {
+			color: rgb(214, 22, 64);
+			margin-right: -1em;
+		}
+	}
+}
+.show {
+	transform: translate(0) scale(1);
+}
+.contact-button {
+	position: fixed;
+	bottom: 10px;
+	right: 15px;
+
+	i {
+		position: relative;
+		font-size: 6rem;
+		color: rgb(214, 22, 64);
+	}
+}
+// Nav Burger mobile
+@mixin hamburger-line {
+	width: 100%;
+	height: 3px;
+	background-color: $red;
+	position: absolute;
+}
+.redtext {
+	color: $red;
+}
+
+.wrapper {
+	margin: 0 auto;
+	max-width: 1200px;
+	width: 100%;
+}
+
+.hamburger {
+	padding: 2em;
+	display: inline-block;
+	cursor: pointer;
+	background-color: transparent;
+	border: 0;
+	margin: 0;
+	z-index: 100;
+	position: fixed;
+	// transition:translateY 0.3s;
+	&__box {
+		width: 35px;
+		height: 24px;
+		display: inline-block;
+		position: relative;
+
+		&-inner {
+			@include hamburger-line;
+
+			left: 0;
+			top: 50%;
+			transform: translateY(-50%);
+			transition: background-color 0.1s 0.2s ease-in-out;
+		}
+
+		&-inner::before,
+		&-inner::after {
+			@include hamburger-line;
+
+			content: "";
+			left: 0;
+			transition: transform 0.2s 0.2s ease-in-out;
+		}
+		&-inner::before {
+			top: -10px;
+		}
+
+		&-inner::after {
+			top: 10px;
+		}
+
+		.hamburger--active .hamburger__inner {
+			background-color: transparent;
+		}
+	}
+
+	&--active {
+		transform: translatex(20rem);
+	}
+}
+
+.hamburger,
+.navigation {
+	transition: transform 0.3s 0.1s ease-in-out;
+}
+
+.hamburger--active .hamburger__box-inner {
+	background-color: transparent;
+}
+
+.hamburger--active .hamburger__box-inner:before {
+	transform: translateY(10px) rotate(45deg);
+	background-color: $dark;
+}
+
+.hamburger--active .hamburger__box-inner:after {
+	transform: translateY(-10px) rotate(-45deg);
+	background-color: $dark;
+}
+.nav__desktop {
+	display: none;
+}
+
+.navigation {
+	height: 100%;
+	width: 90%;
+	background-color: #990000;
+	background-image: linear-gradient(147deg, #990000 0%, #ff0000 74%);
+	border-top-right-radius: 15px;
+	border-bottom-right-radius: 15px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	transform: translateX(-110%);
+	z-index: 99;
+	transition: transform 0.3s;
+
+	&__list {
+		margin-top: 5em;
+		list-style: none;
+		text-align: center;
+
+		&-item {
+			margin-bottom: 3.5em;
+
+			a {
+				padding: 0.75em 4em;
+				text-decoration: none;
+				color: $light;
+				font-size: 2rem;
+				transition: color 0.3s;
+			}
+			a:hover {
+				color: $dark;
+			}
+		}
+	}
+	&--active {
+		transform: translateX(0px);
+		position: fixed;
+		z-index: 99;
+	}
+
+	.logo {
+		position: absolute;
+		z-index: 1;
+		left: 0.5em;
+		top: 1em;
+		font-size: 4rem;
+		transform: translateY(-50%);
+
+		.fa-bowling-ball {
+			color: #f5f0f0;
+			padding: 0.5em;
+		}
+		.fa-bowling-ball:hover {
+			color: #333;
+		}
+	}
+}
+// homee
+.header {
+	.hero-img {
+		position: relative;
+		height: 100vh;
+		background-image: url("../img/headingMala.jpg");
+		background-position: center;
+		background-size: cover;
+		background-attachment: fixed;
+		z-index: 0;
+	}
+	.hero-text {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		height: 100%;
+		color: $light;
+		padding: 10px;
+		text-align: center;
+		z-index: 5;
+		h1 {
+			font-size: 3rem;
+			text-transform: uppercase;
+			margin-bottom: 0.5em;
+		}
+		p {
+			font-size: 1.7rem;
+		}
+	}
+	.hero-bg {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0, 0, 0, 0.6);
+		z-index: -10;
+	}
+	.fa-chevron-down {
+		color: $light;
+		font-size: 3rem;
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		transform: translate(-50%);
+	}
+}
+
+// main
+.section-title {
+	padding-top: 3rem;
+	text-align: center;
+	font-size: 3rem;
+	color: rgb(214, 22, 64);
+}
+// O nas
+.aboudus {
+	&__box {
+		padding: 1em;
+		font-size: 1.4rem;
+		text-align: center;
+	}
+	&__box2 {
+		padding: 1em;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		&-card1 {
+			&-img1 {
+				height: 5em;
+				margin-bottom: 1.5em;
+			}
+		}
+		&-card2 {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			&-img2 {
+				height: 5em;
+			}
+		}
+
+		&-tittle {
+			padding: 1em;
+			font-size: 1.5rem;
+			text-align: center;
+			margin-bottom: 1em;
+		}
+	}
+
+	&__cardbox {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		text-align: center;
+		margin-top: 5em;
+
+		&-card {
+			margin-bottom: 2em;
+			padding-left: 1em;
+			padding-right: 1em;
+
+			&-tittle {
+				color: rgb(214, 22, 64);
+				font-size: 1.5rem;
+				margin-bottom: 0.5em;
+			}
+
+			&-text {
+				font-size: 1.75rem;
+				margin-bottom: 0.5em;
+			}
+
+			.fas {
+				font-size: 2.3rem;
+				margin-bottom: 0.5em;
+			}
+		}
+	}
+	&__photobox {
+		margin-top: 2em;
+		display: flex;
+		padding-left: 1em;
+		padding-right: 1em;
+
+		&-photo {
+			width: 50%;
+			margin: 1em;
+			img {
+				width: 100%;
+				height: 50%;
+				border-radius: 50%;
+			}
+		}
+		&-tittle {
+			text-align: center;
+			font-size: 1.1rem;
+
+			.name {
+				color: rgb(214, 22, 64);
+				font-size: 1.3rem;
+			}
+		}
+	}
+	.team {
+		font-size: 2rem;
+		text-align: center;
+		color: rgb(214, 22, 64);
+	}
+}
+@import "./mediaS";
+@import "./mediaM";
+@import "./mediaL";

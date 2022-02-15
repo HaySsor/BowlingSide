@@ -1,0 +1,36 @@
+@media (min-width: 375px) {
+  .hamburger--active {
+    transform: translatex(24rem);
+  }
+
+  .hamburger__box {
+    width: 45px;
+    height: 35px;
+    display: inline-block;
+    position: relative;
+  }
+
+  .navigation__list {
+    margin-top: 6.5em;
+  }
+  .navigation__list-item {
+    margin-bottom: 4.25em;
+  }
+  .navigation__list-item a {
+    padding: 1em 1.5em;
+    font-size: 2.5rem;
+  }
+}
+@media (min-width: 576px) {
+  .navigation__list {
+    margin-top: 20em;
+    margin-left: 10em;
+  }
+  .navigation__list-item {
+    margin-bottom: 4.25em;
+  }
+  .navigation__list-item a {
+    padding: 1em 1.5em;
+    font-size: 3rem;
+  }
+}

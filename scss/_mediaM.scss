@@ -1,0 +1,168 @@
+@media (min-width: 768px) {
+	// nav hamvurger
+	.hamburger--active {
+		transform: translatex(40em);
+	}
+	.hamburger__box {
+		width: 60px;
+		height: 50px;
+	}
+
+	.hamburger__inner::before {
+		top: -15px;
+	}
+
+	.hamburger__inner::after {
+		top: 15px;
+	}
+	.hamburger--active .hamburger__inner:before {
+		transform: translateY(15px) rotate(45deg);
+	}
+
+	.hamburger--active .hamburger__inner:after {
+		transform: translateY(-15px) rotate(-45deg);
+	}
+
+	.navigation {
+		align-items: center;
+		&__list {
+			display: flex;
+			justify-content: center;
+			align-content: center;
+			flex-direction: column;
+			margin-top: 12em;
+			margin-left: 0;
+			align-items: center;
+			&-item {
+				margin-top: 0em;
+
+				margin-bottom: 6em;
+				a {
+					padding: 1em 2em;
+					font-size: 3.2rem;
+				}
+			}
+		}
+	}
+	.contact__box {
+		height: 45em;
+		width: 45em;
+		right: 20px;
+
+		&-tittle {
+			margin-bottom: 2em;
+			color: rgb(214, 22, 64);
+			font-size: 3rem;
+		}
+
+		&-phone {
+			font-size: 3rem;
+			margin-bottom: 3em;
+		}
+		&-email {
+			font-size: 3rem;
+			margin-bottom: 1.2em;
+		}
+	}
+	.contact-button {
+		i {
+			font-size: 7rem;
+			padding: 0.25em;
+		}
+	}
+
+	// main
+	.section-title {
+		font-size: 3.5rem;
+	}
+	// o nas
+	.aboudus {
+		&__box {
+			font-size: 1.75rem;
+		}
+		&__box2 {
+			padding: 1.2em;
+			flex-direction: row;
+			justify-content: space-between;
+
+			&-card1 {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				width: 50%;
+				padding-left: 2em;
+			}
+			&-card2 {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				width: 50%;
+
+				&-img2 {
+					height: 5rem;
+				}
+			}
+		}
+		&__cardbox {
+			flex-direction: row;
+			flex-wrap: wrap;
+
+			&-card {
+				width: 33%;
+			}
+		}
+		&__photobox {
+			&-photo {
+				width: 50%;
+				margin: 1em;
+				img {
+					height: 70%;
+				}
+			}
+			&-tittle {
+				font-size: 1.75rem;
+
+				.name {
+					color: rgb(214, 22, 64);
+					font-size: 1.85rem;
+				}
+			}
+		}
+		.team {
+			margin-top: 1.5em;
+			font-size: 3rem;
+		}
+
+		&__photobox {
+			margin-bottom: 2em;
+			&-photo {
+				display: flex;
+				width: 100%;
+				margin: 1em;
+				background-color: rgb(224, 224, 224);
+				border-radius: 40px;
+				border-top-left-radius: 45%;
+				border-bottom-left-radius: 45%;
+
+				img {
+					width: 50%;
+					height: 100%;
+					border-radius: 50%;
+				}
+			}
+			&-tittle {
+				text-align: center;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				font-size: 1.2rem;
+
+				.name {
+					color: rgb(214, 22, 64);
+					font-size: 2rem;
+				}
+			}
+		}
+	}
+}
