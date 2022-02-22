@@ -35,7 +35,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	transition: transform 0.7s;
+	transition: transform 0.5s;
 	transform: translate(150%, 150%) scale(0);
 
 	&-tittle {
@@ -276,7 +276,8 @@ body {
 		color: $light;
 		font-size: 3rem;
 		position: absolute;
-		bottom: 0;
+		padding: 1em;
+		bottom: 0.2em;
 		left: 50%;
 		transform: translate(-50%);
 	}
@@ -288,6 +289,7 @@ body {
 	text-align: center;
 	font-size: 3rem;
 	color: rgb(214, 22, 64);
+	margin-bottom: 1em;
 }
 // O nas
 .aboudus {
@@ -345,7 +347,7 @@ body {
 			}
 
 			&-text {
-				font-size: 1.75rem;
+				font-size: 1.4rem;
 				margin-bottom: 0.5em;
 			}
 
@@ -364,6 +366,11 @@ body {
 		&-photo {
 			width: 50%;
 			margin: 1em;
+			background-color: rgb(224, 224, 224);
+			border-top-left-radius: 40%;
+			border-top-right-radius: 40%;
+			border-bottom-left-radius: 15px;
+			border-bottom-right-radius: 15px;
 			img {
 				width: 100%;
 				height: 50%;
@@ -384,6 +391,63 @@ body {
 		font-size: 2rem;
 		text-align: center;
 		color: rgb(214, 22, 64);
+	}
+}
+
+// oferta torów
+
+.track {
+	margin: 1rem;
+	&__box {
+		margin: 0.5rem;
+
+		background-color: rgb(224, 224, 224);
+		border-radius: 15px;
+
+		&-text {
+			text-align: center;
+			&-tittle {
+				font-size: 1.5rem;
+				margin-bottom: 1rem;
+				text-transform: uppercase;
+				margin-top: 2rem;
+				padding: 2.3rem 1rem;
+				color: rgb(214, 22, 64);
+			}
+
+			&-info {
+				font-size: 1.4rem;
+				margin-bottom: 1.2rem;
+				padding: 0 1rem;
+			}
+			&-link {
+				margin-bottom: 2rem;
+				img {
+					margin-bottom: 1rem;
+					margin-top: 0.5rem;
+				}
+
+				a {
+					font-size: 1.2rem;
+					margin: 1.5rem;
+					padding: 5px 10px;
+				}
+			}
+		}
+
+		&-photo {
+			img {
+				width: 100%;
+				// margin-bottom: 3rem;
+				border-radius: 15px;
+			}
+		}
+	}
+	&__tittle {
+		text-align: center;
+		color: rgb(214, 22, 64);
+		margin-top: 3rem;
+		font-size: 2.5rem;
 	}
 }
 @import "./mediaS";

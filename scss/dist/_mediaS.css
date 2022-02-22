@@ -49,6 +49,13 @@
   .aboudus__photobox-tittle .name {
     color: #d61640;
   }
+
+  .track__box-text-tittle {
+    font-size: 1.6rem;
+  }
+  .track__box-text-info {
+    font-size: 1.5;
+  }
 }
 @media (min-width: 390px) {
   .navigation__list {

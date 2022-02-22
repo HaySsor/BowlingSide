@@ -4,8 +4,8 @@ var hamburgerBtn = document.querySelector(".hamburger");
 var nav = document.querySelector(".navigation");
 var destktopNav = document.querySelector(".nav__desktop");
 var navlist = document.querySelectorAll(".link");
-var floatingPhoneButto = document.querySelector('.fa-phone-square');
-var floatingPhoneBox = document.querySelector('.contact__box'); // Navigarion List
+var floatingPhoneButto = document.querySelector(".fa-phone-square");
+var floatingPhoneBox = document.querySelector(".contact__box"); // Navigarion List
 
 var burgerMenu = function burgerMenu() {
   hamburgerBtn.classList.toggle("hamburger--active");
@@ -28,9 +28,9 @@ var addShadow = function addShadow() {
 };
 
 var togglePhonebox = function togglePhonebox() {
-  floatingPhoneBox.classList.toggle('show');
+  floatingPhoneBox.classList.toggle("show");
 };
 
 window.addEventListener("scroll", addShadow);
 hamburgerBtn.addEventListener("click", burgerMenu);
-floatingPhoneButto.addEventListener('click', togglePhonebox);
+floatingPhoneButto.addEventListener("click", togglePhonebox);

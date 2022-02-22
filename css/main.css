@@ -37,10 +37,10 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-transition: -webkit-transform 0.7s;
-  transition: -webkit-transform 0.7s;
-  transition: transform 0.7s;
-  transition: transform 0.7s, -webkit-transform 0.7s;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
   -webkit-transform: translate(150%, 150%) scale(0);
           transform: translate(150%, 150%) scale(0);
 }
@@ -322,7 +322,8 @@ body {
   color: #f5f0f0;
   font-size: 3rem;
   position: absolute;
-  bottom: 0;
+  padding: 1em;
+  bottom: 0.2em;
   left: 50%;
   -webkit-transform: translate(-50%);
           transform: translate(-50%);
@@ -333,6 +334,7 @@ body {
   text-align: center;
   font-size: 3rem;
   color: #d61640;
+  margin-bottom: 1em;
 }
 
 .aboudus__box {
@@ -418,7 +420,7 @@ body {
 }
 
 .aboudus__cardbox-card-text {
-  font-size: 1.75rem;
+  font-size: 1.4rem;
   margin-bottom: 0.5em;
 }
 
@@ -439,6 +441,11 @@ body {
 .aboudus__photobox-photo {
   width: 50%;
   margin: 1em;
+  background-color: #e0e0e0;
+  border-top-left-radius: 40%;
+  border-top-right-radius: 40%;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
 }
 
 .aboudus__photobox-photo img {
@@ -461,6 +468,62 @@ body {
   font-size: 2rem;
   text-align: center;
   color: #d61640;
+}
+
+.track {
+  margin: 1rem;
+}
+
+.track__box {
+  margin: 0.5rem;
+  background-color: #e0e0e0;
+  border-radius: 15px;
+}
+
+.track__box-text {
+  text-align: center;
+}
+
+.track__box-text-tittle {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  margin-top: 2rem;
+  padding: 2.3rem 1rem;
+  color: #d61640;
+}
+
+.track__box-text-info {
+  font-size: 1.4rem;
+  margin-bottom: 1.2rem;
+  padding: 0 1rem;
+}
+
+.track__box-text-link {
+  margin-bottom: 2rem;
+}
+
+.track__box-text-link img {
+  margin-bottom: 1rem;
+  margin-top: 0.5rem;
+}
+
+.track__box-text-link a {
+  font-size: 1.2rem;
+  margin: 1.5rem;
+  padding: 5px 10px;
+}
+
+.track__box-photo img {
+  width: 100%;
+  border-radius: 15px;
+}
+
+.track__tittle {
+  text-align: center;
+  color: #d61640;
+  margin-top: 3rem;
+  font-size: 2.5rem;
 }
 
 @media (min-width: 375px) {
@@ -512,6 +575,12 @@ body {
   }
   .aboudus__photobox-tittle .name {
     color: #d61640;
+  }
+  .track__box-text-tittle {
+    font-size: 1.6rem;
+  }
+  .track__box-text-info {
+    font-size: 1.5;
   }
 }
 
@@ -614,7 +683,7 @@ body {
   }
   .navigation__list-item a {
     padding: 1em 2em;
-    font-size: 3.2rem;
+    font-size: 3rem;
   }
   .contact__box {
     height: 45em;
@@ -624,14 +693,14 @@ body {
   .contact__box-tittle {
     margin-bottom: 2em;
     color: #d61640;
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
   .contact__box-phone {
-    font-size: 3rem;
-    margin-bottom: 3em;
+    font-size: 2rem;
+    margin-bottom: 3.2em;
   }
   .contact__box-email {
-    font-size: 3rem;
+    font-size: 2rem;
     margin-bottom: 1.2em;
   }
   .contact-button i {
@@ -753,6 +822,21 @@ body {
     color: #d61640;
     font-size: 2rem;
   }
+  .track {
+    margin: 1.2rem;
+  }
+  .track__box-text-tittle {
+    font-size: 1.8rem;
+  }
+  .track__box-text-info {
+    font-size: 1.6rem;
+  }
+  .track__box-text-link a {
+    margin: 1.6rem;
+  }
+  .track__tittle {
+    margin: 3.5rem 0;
+  }
 }
 
 @media (min-width: 922px) {
@@ -764,7 +848,7 @@ body {
     margin-bottom: 7.5em;
   }
   .navigation__list-item a {
-    font-size: 3.75rem;
+    font-size: 2rem;
   }
   .contact__box {
     height: 50em;
@@ -787,65 +871,6 @@ body {
 }
 
 @media (min-width: 1024px) {
-  .header .hero-text h1 {
-    font-size: 4rem;
-    text-transform: uppercase;
-    margin-bottom: 0.5em;
-  }
-  .header .hero-text p {
-    font-size: 2.2rem;
-  }
-  .section-title {
-    padding-top: 8rem;
-    font-size: 4rem;
-  }
-  .aboudus {
-    height: 100vh;
-  }
-  .aboudus .aboudus-bgc {
-    border-radius: 15px;
-  }
-  .aboudus__box {
-    font-size: 2rem;
-  }
-  .aboudus__box2-tittle {
-    font-size: 2.5rem;
-  }
-  .aboudus__box2-card1-img1 {
-    height: 10em;
-  }
-  .aboudus__box2-card2-img2 {
-    height: 10em;
-  }
-  .aboudus__cardbox {
-    margin-top: 6em;
-  }
-  .aboudus__cardbox-card-tittle {
-    font-size: 2.3rem;
-  }
-  .aboudus__cardbox-card-text {
-    font-size: 2rem;
-  }
-  .aboudus__cardbox-card .fas {
-    font-size: 2.3rem;
-  }
-  .aboudus__photobox-photo img {
-    width: 50%;
-    height: 100%;
-    border-radius: 50%;
-  }
-  .aboudus__photobox-tittle {
-    font-size: 1.75rem;
-  }
-  .aboudus__photobox-tittle .name {
-    font-size: 2.3rem;
-  }
-  .header .hero-img {
-    background-image: url("../img/headingduza.jpg");
-  }
-}
-
-@media (min-width: 1200px) {
   .hamburger {
     display: none;
   }
@@ -862,6 +887,9 @@ body {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     width: 100%;
     height: 7em;
     z-index: 100;
@@ -869,16 +897,14 @@ body {
     transition: background-color 0.7s;
   }
   .nav__desktop-item {
-    height: 100%;
-    margin: 0.4em;
-    font-size: 1.5rem;
+    margin: 0.5rem;
+    font-size: 1.6rem;
+    padding: 1.5rem 1.25rem;
     text-decoration: none;
     color: #ffffff;
-    margin-top: 0.5em;
-    padding: 0.5em;
   }
   .nav__desktop-item:last-child {
-    margin-right: 1em;
+    margin-right: 2em;
   }
   .nav__desktop-item:hover {
     color: #aaaaaa;
@@ -899,6 +925,131 @@ body {
   }
   .logo .fa-bowling-ball:hover {
     color: #333;
+  }
+  .show-bgc {
+    background-color: #e0455f;
+    background-image: linear-gradient(147deg, #ca2c2c 0%, #44000b 74%);
+  }
+  .header .hero-text h1 {
+    font-size: 4rem;
+    text-transform: uppercase;
+    margin-bottom: 0.5em;
+  }
+  .header .hero-text p {
+    font-size: 2.2rem;
+  }
+  .section-title {
+    padding-top: 8rem;
+    font-size: 4rem;
+  }
+  .aboudus .aboudus-bgc {
+    border-radius: 15px;
+  }
+  .aboudus__box {
+    font-size: 2rem;
+  }
+  .aboudus__box2-tittle {
+    font-size: 2.5rem;
+  }
+  .aboudus__box2-card1-img1 {
+    height: 7em;
+  }
+  .aboudus__box2-card2-img2 {
+    height: 7em;
+  }
+  .aboudus__cardbox {
+    margin-top: 6em;
+  }
+  .aboudus__cardbox-card-tittle {
+    font-size: 2.1rem;
+  }
+  .aboudus__cardbox-card-text {
+    font-size: 1.6rem;
+  }
+  .aboudus__cardbox-card .fas {
+    font-size: 2.3rem;
+  }
+  .aboudus__photobox-photo img {
+    width: 50%;
+    height: 100%;
+    border-radius: 50%;
+  }
+  .aboudus__photobox-tittle {
+    font-size: 1.7rem;
+  }
+  .aboudus__photobox-tittle .name {
+    font-size: 2.3rem;
+  }
+  .header .hero-img {
+    background-image: url("../img/headingduza.jpg");
+  }
+  .track .box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .track__box {
+    width: 49%;
+    margin-bottom: 8rem;
+  }
+  .track__box-text {
+    text-align: center;
+    height: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .track__box-text-tittle {
+    display: block;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    margin-top: 2rem;
+    padding: 2.5rem 1rem;
+    padding-top: 3rem;
+    color: #d61640;
+  }
+  .track__box-text-info {
+    font-size: 1.6rem;
+  }
+  .track__box-text-info--last {
+    font-size: 1.6rem;
+  }
+  .track__box-text-link {
+    margin-bottom: 1rem;
+  }
+  .track__box-photo {
+    margin-top: 1em;
+    height: 50%;
+  }
+  .track__box-photo img {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+  }
+  .track__tittle {
+    width: 100%;
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .nav__desktop {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
   }
   .show-bgc {
     background-color: #e0455f;
@@ -938,6 +1089,7 @@ body {
     display: -ms-flexbox;
     display: flex;
     width: 100%;
+    height: 70%;
     margin: 1em;
     background-color: #e0e0e0;
     border-radius: 40px;
@@ -1006,30 +1158,9 @@ body {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    -ms-flex-line-pack: center;
-        align-content: center;
-    height: 6em;
   }
-  .nav__desktop-item {
-    height: 100%;
-    font-size: 1.5rem;
-    margin: 0.5em;
-    padding: 1em;
-    text-decoration: none;
-    color: #f5f0f0;
-    margin-top: 0.5em;
-  }
-  .nav__desktop .logo {
-    position: relative;
-    z-index: 1;
-    left: 0;
-    top: 0.3em;
-    margin-right: 2em;
-    font-size: 4rem;
-  }
-  .nav__desktop .logo i {
-    color: #f5f0f0;
-    padding: 0.5em;
+  .logo {
+    left: 3em;
   }
   .section-title {
     padding-top: 8rem;
@@ -1053,6 +1184,21 @@ body {
   .aboudus__cardbox-card .fas {
     font-size: 2rem;
     margin-bottom: 0.7em;
+  }
+}
+
+@media (min-width: 1847px) {
+  .contact-button {
+    position: fixed;
+    bottom: 10px;
+    left: 85%;
+  }
+  .contact__box {
+    position: fixed;
+    bottom: 40px;
+    left: 73%;
+    height: 30em;
+    width: 30em;
   }
 }
 /*# sourceMappingURL=main.css.map */

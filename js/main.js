@@ -2,10 +2,8 @@ const hamburgerBtn = document.querySelector(".hamburger");
 const nav = document.querySelector(".navigation");
 const destktopNav = document.querySelector(".nav__desktop");
 const navlist = document.querySelectorAll(".link");
-const floatingPhoneButto = document.querySelector('.fa-phone-square')
-const floatingPhoneBox = document.querySelector('.contact__box')
-
-
+const floatingPhoneButto = document.querySelector(".fa-phone-square");
+const floatingPhoneBox = document.querySelector(".contact__box");
 
 // Navigarion List
 const burgerMenu = () => {
@@ -29,14 +27,10 @@ const addShadow = () => {
 };
 
 const togglePhonebox = () => {
-	floatingPhoneBox.classList.toggle('show')
-}
-
-
+	floatingPhoneBox.classList.toggle("show");
+};
 
 window.addEventListener("scroll", addShadow);
 
 hamburgerBtn.addEventListener("click", burgerMenu);
-floatingPhoneButto.addEventListener('click',togglePhonebox)
-
-
+floatingPhoneButto.addEventListener("click", togglePhonebox);

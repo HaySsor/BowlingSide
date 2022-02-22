@@ -8,7 +8,7 @@
 			&-item {
 				margin-bottom: 7.5em;
 				a {
-					font-size: 3.75rem;
+					font-size: 2rem;
 				}
 			}
 		}
@@ -36,95 +36,6 @@
 }
 
 @media (min-width: 1024px) {
-	.header {
-		.hero-text {
-			h1 {
-				font-size: 4rem;
-				text-transform: uppercase;
-				margin-bottom: 0.5em;
-			}
-			p {
-				font-size: 2.2rem;
-			}
-		}
-	}
-	// main
-	.section-title {
-		padding-top: 8rem;
-		font-size: 4rem;
-	}
-	// o nas
-
-	.aboudus {
-		height: 100vh;
-		// background-color: #bd4f6c8c;
-		// background-image: linear-gradient(326deg, #bd4f6c8e 0%, #d7826a7a 74%);
-
-		// padding-top: 7rem;
-		.aboudus-bgc {
-			border-radius: 15px;
-			// background-color: rgba(255, 255, 255, 0.432);
-		}
-		&__box {
-			font-size: 2rem;
-		}
-		&__box2 {
-			&-tittle {
-				font-size: 2.5rem;
-			}
-			&-card1 {
-				&-img1 {
-					height: 10em;
-				}
-			}
-			&-card2 {
-				&-img2 {
-					height: 10em;
-				}
-			}
-		}
-		&__cardbox {
-			margin-top: 6em;
-			&-card {
-				&-tittle {
-					font-size: 2.3rem;
-				}
-
-				&-text {
-					font-size: 2rem;
-				}
-
-				.fas {
-					font-size: 2.3rem;
-				}
-			}
-		}
-		&__photobox {
-			&-photo {
-				img {
-					width: 50%;
-					height: 100%;
-					border-radius: 50%;
-				}
-			}
-			&-tittle {
-				font-size: 1.75rem;
-
-				.name {
-					font-size: 2.3rem;
-				}
-			}
-		}
-	}
-
-	// home
-	.header {
-		.hero-img {
-			background-image: url("../img/headingduza.jpg");
-		}
-	}
-}
-@media (min-width: 1200px) {
 	.hamburger {
 		display: none;
 	}
@@ -137,6 +48,7 @@
 		position: fixed;
 		display: flex;
 		justify-content: flex-end;
+		align-items: center;
 		width: 100%;
 		height: 7em;
 		z-index: 100;
@@ -144,15 +56,13 @@
 
 		// background-color: rgb(180, 22, 22);
 		&-item {
-			height: 100%;
-			margin: 0.4em;
-			font-size: 1.5rem;
+			margin: 0.5rem;
+			font-size: 1.6rem;
+			padding: 1.5rem 1.25rem;
 			text-decoration: none;
 			color: #ffffff;
-			margin-top: 0.5em;
-			padding: 0.5em;
 			&:last-child {
-				margin-right: 1em;
+				margin-right: 2em;
 			}
 
 			&:hover {
@@ -176,6 +86,154 @@
 		.fa-bowling-ball:hover {
 			color: #333;
 		}
+	}
+	.show-bgc {
+		background-color: #e0455f;
+		background-image: linear-gradient(147deg, #ca2c2c 0%, #44000b 74%);
+	}
+
+	.header {
+		.hero-text {
+			h1 {
+				font-size: 4rem;
+				text-transform: uppercase;
+				margin-bottom: 0.5em;
+			}
+			p {
+				font-size: 2.2rem;
+			}
+		}
+	}
+	// main
+	.section-title {
+		padding-top: 8rem;
+		font-size: 4rem;
+	}
+	// o nas
+
+	.aboudus {
+		.aboudus-bgc {
+			border-radius: 15px;
+			// background-color: rgba(255, 255, 255, 0.432);
+		}
+		&__box {
+			font-size: 2rem;
+		}
+		&__box2 {
+			&-tittle {
+				font-size: 2.5rem;
+			}
+			&-card1 {
+				&-img1 {
+					height: 7em;
+				}
+			}
+			&-card2 {
+				&-img2 {
+					height: 7em;
+				}
+			}
+		}
+		&__cardbox {
+			margin-top: 6em;
+			&-card {
+				&-tittle {
+					font-size: 2.1rem;
+				}
+
+				&-text {
+					font-size: 1.6rem;
+				}
+
+				.fas {
+					font-size: 2.3rem;
+				}
+			}
+		}
+		&__photobox {
+			&-photo {
+				img {
+					width: 50%;
+					height: 100%;
+					border-radius: 50%;
+				}
+			}
+			&-tittle {
+				font-size: 1.7rem;
+
+				.name {
+					font-size: 2.3rem;
+				}
+			}
+		}
+	}
+
+	// home
+	.header {
+		.hero-img {
+			background-image: url("../img/headingduza.jpg");
+		}
+	}
+	.track {
+		.box {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+
+		&__box {
+			width: 49%;
+			margin-bottom: 8rem;
+			&-text {
+				text-align: center;
+				height: 50%;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				&-tittle {
+					display: block;
+					font-size: 2rem;
+					margin-bottom: 1rem;
+					text-transform: uppercase;
+					margin-top: 2rem;
+					padding: 2.5rem 1rem;
+					padding-top: 3rem;
+					color: rgb(214, 22, 64);
+				}
+
+				&-info {
+					font-size: 1.6rem;
+					&--last {
+						font-size: 1.6rem;
+					}
+				}
+				&-link {
+					margin-bottom: 1rem;
+				}
+			}
+
+			&-photo {
+				margin-top: 1em;
+				height: 50%;
+				img {
+					width: 100%;
+					height: 100%;
+
+					border-radius: 15px;
+				}
+			}
+		}
+		&__tittle {
+			width: 100%;
+
+			font-size: 3rem;
+		}
+	}
+}
+
+@media (min-width: 1200px) {
+	.nav__desktop {
+		justify-content: flex-end;
 	}
 
 	.show-bgc {
@@ -226,6 +284,7 @@
 			&-photo {
 				display: flex;
 				width: 100%;
+				height: 70%;
 				margin: 1em;
 				background-color: rgb(224, 224, 224);
 				border-radius: 40px;
@@ -291,32 +350,9 @@
 @media (min-width: 1361px) {
 	.nav__desktop {
 		justify-content: center;
-		align-content: center;
-		height: 6em;
-		&-item {
-			height: 100%;
-			font-size: 1.5rem;
-			margin: 0.5em;
-			padding: 1em;
-			text-decoration: none;
-			color: #f5f0f0;
-
-			margin-top: 0.5em;
-		}
-		.logo {
-			position: relative;
-			z-index: 1;
-			left: 0;
-			top: 0.3em;
-
-			margin-right: 2em;
-			font-size: 4rem;
-
-			i {
-				color: #f5f0f0;
-				padding: 0.5em;
-			}
-		}
+	}
+	.logo {
+		left: 3em;
 	}
 
 	// main
@@ -354,5 +390,21 @@
 				}
 			}
 		}
+	}
+}
+
+@media (min-width: 1847px) {
+	.contact-button {
+		position: fixed;
+		bottom: 10px;
+		left: 85%;
+	}
+	.contact__box {
+		position: fixed;
+		bottom: 40px;
+		left: 73%;
+
+		height: 30em;
+		width: 30em;
 	}
 }
