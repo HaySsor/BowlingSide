@@ -76,9 +76,9 @@ body {
   right: 15px;
 }
 .contact-button i {
-  position: relative;
   font-size: 6rem;
   color: #d61640;
+  z-index: 11;
 }
 
 .redtext {
@@ -106,6 +106,7 @@ body {
   height: 24px;
   display: inline-block;
   position: relative;
+  z-index: -5;
 }
 .hamburger__box-inner {
   width: 100%;
@@ -219,7 +220,7 @@ body {
   position: relative;
   height: 100vh;
   background-image: url("../img/headingMala.jpg");
-  background-position: center;
+  background-position: bottom;
   background-size: cover;
   background-attachment: fixed;
   z-index: 0;
@@ -777,8 +778,9 @@ body {
   }
 
   .section-title {
-    padding-top: 8rem;
+    padding-top: 9rem;
     font-size: 4rem;
+    margin-top: 2rem;
   }
 
   .aboudus .aboudus-bgc {
@@ -986,6 +988,7 @@ body {
   .section-title {
     padding-top: 8rem;
     font-size: 4rem;
+    margin-top: 4rem;
   }
 
   .aboudus__box {

@@ -1,21 +1,29 @@
 "use strict";
 
-var hamburgerBtn = document.querySelector(".hamburger");
-var nav = document.querySelector(".navigation");
 var destktopNav = document.querySelector(".nav__desktop");
 var navlist = document.querySelectorAll(".link");
-var floatingPhoneButto = document.querySelector(".fa-phone-square");
-var floatingPhoneBox = document.querySelector(".contact__box"); // Navigarion List
+var burger = document.getElementById("burger");
+var navid = document.getElementById("nav");
+var phone = document.getElementById("phone");
+var icon = document.getElementById("icon"); // Navigarion List
 
 var burgerMenu = function burgerMenu() {
-  hamburgerBtn.classList.toggle("hamburger--active");
-  nav.classList.toggle("navigation--active");
+  burger.classList.toggle("hamburger--active");
+  navid.classList.toggle("navigation--active");
   navlist.forEach(function (navi) {
     navi.addEventListener("click", function () {
-      hamburgerBtn.classList.remove("hamburger--active");
-      nav.classList.remove("navigation--active");
+      burger.classList.remove("hamburger--active");
+      navid.classList.remove("navigation--active");
     });
   });
+};
+
+document.onclick = function (e) {
+  if (e.target.id !== "navid" && e.target.id !== "burger" && e.target.id !== "phone" && e.target.id !== "icon") {
+    burger.classList.remove("hamburger--active");
+    navid.classList.remove("navigation--active");
+    phone.classList.remove("show");
+  }
 }; // shawdo nav desktop
 
 
@@ -28,9 +36,9 @@ var addShadow = function addShadow() {
 };
 
 var togglePhonebox = function togglePhonebox() {
-  floatingPhoneBox.classList.toggle("show");
+  phone.classList.toggle("show");
 };
 
 window.addEventListener("scroll", addShadow);
-hamburgerBtn.addEventListener("click", burgerMenu);
-floatingPhoneButto.addEventListener("click", togglePhonebox);
+burger.addEventListener("click", burgerMenu);
+icon.addEventListener("click", togglePhonebox);

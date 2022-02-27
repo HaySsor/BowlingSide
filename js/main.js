@@ -1,22 +1,36 @@
-const hamburgerBtn = document.querySelector(".hamburger");
-const nav = document.querySelector(".navigation");
 const destktopNav = document.querySelector(".nav__desktop");
 const navlist = document.querySelectorAll(".link");
-const floatingPhoneButto = document.querySelector(".fa-phone-square");
-const floatingPhoneBox = document.querySelector(".contact__box");
+const burger = document.getElementById("burger");
+const navid = document.getElementById("nav");
+const phone = document.getElementById("phone");
+const icon = document.getElementById("icon");
 
 // Navigarion List
 const burgerMenu = () => {
-	hamburgerBtn.classList.toggle("hamburger--active");
-	nav.classList.toggle("navigation--active");
+	burger.classList.toggle("hamburger--active");
+	navid.classList.toggle("navigation--active");
 
 	navlist.forEach(navi => {
 		navi.addEventListener("click", () => {
-			hamburgerBtn.classList.remove("hamburger--active");
-			nav.classList.remove("navigation--active");
+			burger.classList.remove("hamburger--active");
+			navid.classList.remove("navigation--active");
 		});
 	});
 };
+
+document.onclick = function (e) {
+	if (
+		e.target.id !== "navid" &&
+		e.target.id !== "burger" &&
+		e.target.id !== "phone" &&
+		e.target.id !== "icon"
+	) {
+		burger.classList.remove("hamburger--active");
+		navid.classList.remove("navigation--active");
+		phone.classList.remove("show");
+	}
+};
+
 // shawdo nav desktop
 const addShadow = () => {
 	if (window.scrollY >= 100) {
@@ -27,10 +41,10 @@ const addShadow = () => {
 };
 
 const togglePhonebox = () => {
-	floatingPhoneBox.classList.toggle("show");
+	phone.classList.toggle("show");
 };
 
 window.addEventListener("scroll", addShadow);
 
-hamburgerBtn.addEventListener("click", burgerMenu);
-floatingPhoneButto.addEventListener("click", togglePhonebox);
+burger.addEventListener("click", burgerMenu);
+icon.addEventListener("click", togglePhonebox);
