@@ -342,6 +342,27 @@
 	.show {
 		transform: translate(0) scale(1);
 	}
+	.accessories {
+		&__info {
+			&-text {
+				font-size: 1.6rem;
+
+				&-contakt {
+					font-size: 1.7rem;
+				}
+				.fa-facebook {
+					font-size: 5rem;
+				}
+			}
+		}
+		&__img {
+			&-boxs {
+				img {
+					height: 40rem;
+				}
+			}
+		}
+	}
 }
 
 @media (min-width: 1361px) {

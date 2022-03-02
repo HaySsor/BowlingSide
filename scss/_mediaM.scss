@@ -188,4 +188,26 @@
 			margin: 3.5rem 0;
 		}
 	}
+
+	.accessories {
+		&__info {
+			&-text {
+				font-size: 1.4rem;
+
+				&-contakt {
+					font-size: 1.7rem;
+				}
+				.fa-facebook {
+					font-size: 5rem;
+				}
+			}
+		}
+		&__img {
+			&-boxs {
+				img {
+					height: 30rem;
+				}
+			}
+		}
+	}
 }

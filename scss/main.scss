@@ -19,6 +19,19 @@ body {
 	background-color: $light;
 	font-family: "Montserrat", sans-serif;
 }
+body:after {
+	content: "";
+	position: fixed; /* stretch a fixed position to the whole screen */
+	top: 0;
+	height: 100vh; /* fix for mobile browser address bar appearing disappearing */
+	left: 0;
+	right: 0;
+	z-index: -1; /* needed to keep in the background */
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
 
 // pływający rzycisk
 
@@ -37,6 +50,7 @@ body {
 	justify-content: center;
 	transition: transform 0.5s;
 	transform: translate(150%, 150%) scale(0);
+	z-index: 99;
 
 	&-tittle {
 		margin-bottom: 2em;
@@ -81,6 +95,7 @@ body {
 	position: fixed;
 	bottom: 10px;
 	right: 15px;
+	z-index: 99;
 	i {
 		// position: relative;
 		font-size: 6rem;
@@ -449,6 +464,45 @@ body {
 		color: rgb(214, 22, 64);
 		margin-top: 3rem;
 		font-size: 2.5rem;
+	}
+}
+
+//akcesoria
+.accessories {
+	padding: 0 2rem;
+
+	&__info {
+		text-align: center;
+		&-tittle {
+			margin-bottom: 1em;
+			font-size: 1.8rem;
+		}
+		&-text {
+			font-size: 1.3rem;
+
+			&-contakt {
+				display: flex;
+				justify-content: center;
+				flex-direction: column;
+				gap: 1em;
+				font-size: 1.5rem;
+				margin: 1rem 0;
+			}
+			.fa-facebook {
+				font-size: 4rem;
+			}
+		}
+	}
+	&__img {
+		margin-top: 3rem;
+		&-boxs {
+			display: flex;
+			img {
+				height: 25rem;
+				width: 100%;
+				border-radius: 15px;
+			}
+		}
 	}
 }
 @import "./mediaS";

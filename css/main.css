@@ -17,6 +17,20 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
+body:after {
+  content: "";
+  position: fixed;
+  /* stretch a fixed position to the whole screen */
+  top: 0;
+  height: 100vh;
+  /* fix for mobile browser address bar appearing disappearing */
+  left: 0;
+  right: 0;
+  z-index: -1;
+  /* needed to keep in the background */
+  background-size: cover;
+}
+
 .contact__box {
   position: fixed;
   bottom: 20px;
@@ -43,6 +57,7 @@ body {
   transition: transform 0.5s, -webkit-transform 0.5s;
   -webkit-transform: translate(150%, 150%) scale(0);
           transform: translate(150%, 150%) scale(0);
+  z-index: 99;
 }
 
 .contact__box-tittle {
@@ -94,6 +109,7 @@ body {
   position: fixed;
   bottom: 10px;
   right: 15px;
+  z-index: 99;
 }
 
 .contact-button i {
@@ -527,6 +543,59 @@ body {
   font-size: 2.5rem;
 }
 
+.accessories {
+  padding: 0 2rem;
+}
+
+.accessories__info {
+  text-align: center;
+}
+
+.accessories__info-tittle {
+  margin-bottom: 1em;
+  font-size: 1.8rem;
+}
+
+.accessories__info-text {
+  font-size: 1.3rem;
+}
+
+.accessories__info-text-contakt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1em;
+  font-size: 1.5rem;
+  margin: 1rem 0;
+}
+
+.accessories__info-text .fa-facebook {
+  font-size: 4rem;
+}
+
+.accessories__img {
+  margin-top: 3rem;
+}
+
+.accessories__img-boxs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.accessories__img-boxs img {
+  height: 25rem;
+  width: 100%;
+  border-radius: 15px;
+}
+
 @media (min-width: 375px) {
   .hamburger--active {
     -webkit-transform: translatex(24rem);
@@ -838,6 +907,18 @@ body {
   .track__tittle {
     margin: 3.5rem 0;
   }
+  .accessories__info-text {
+    font-size: 1.4rem;
+  }
+  .accessories__info-text-contakt {
+    font-size: 1.7rem;
+  }
+  .accessories__info-text .fa-facebook {
+    font-size: 5rem;
+  }
+  .accessories__img-boxs img {
+    height: 30rem;
+  }
 }
 
 @media (min-width: 922px) {
@@ -1147,6 +1228,18 @@ body {
   .show {
     -webkit-transform: translate(0) scale(1);
             transform: translate(0) scale(1);
+  }
+  .accessories__info-text {
+    font-size: 1.6rem;
+  }
+  .accessories__info-text-contakt {
+    font-size: 1.7rem;
+  }
+  .accessories__info-text .fa-facebook {
+    font-size: 5rem;
+  }
+  .accessories__img-boxs img {
+    height: 40rem;
   }
 }
 

@@ -167,4 +167,17 @@
   .track__tittle {
     margin: 3.5rem 0;
   }
+
+  .accessories__info-text {
+    font-size: 1.4rem;
+  }
+  .accessories__info-text-contakt {
+    font-size: 1.7rem;
+  }
+  .accessories__info-text .fa-facebook {
+    font-size: 5rem;
+  }
+  .accessories__img-boxs img {
+    height: 30rem;
+  }
 }

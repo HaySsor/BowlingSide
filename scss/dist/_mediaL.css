@@ -289,6 +289,19 @@
   .show {
     transform: translate(0) scale(1);
   }
+
+  .accessories__info-text {
+    font-size: 1.6rem;
+  }
+  .accessories__info-text-contakt {
+    font-size: 1.7rem;
+  }
+  .accessories__info-text .fa-facebook {
+    font-size: 5rem;
+  }
+  .accessories__img-boxs img {
+    height: 40rem;
+  }
 }
 @media (min-width: 1361px) {
   .nav__desktop {
