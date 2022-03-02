@@ -279,11 +279,13 @@
   .contact-button {
     position: fixed;
     right: 50px;
+    cursor: pointer;
   }
   .contact-button i {
     position: relative;
     font-size: 6rem;
     color: #d61640;
+    cursor: pointer;
   }
 
   .show {

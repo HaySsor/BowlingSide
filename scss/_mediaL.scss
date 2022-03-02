@@ -332,11 +332,13 @@
 	.contact-button {
 		position: fixed;
 		right: 50px;
+		cursor: pointer;
 
 		i {
 			position: relative;
 			font-size: 6rem;
 			color: rgb(214, 22, 64);
+			cursor: pointer;
 		}
 	}
 	.show {
