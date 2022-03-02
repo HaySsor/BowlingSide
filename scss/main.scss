@@ -14,11 +14,14 @@ $red: rgb(214, 22, 64);
 html {
 	font-size: 62.5%;
 	scroll-behavior: smooth;
-	height: 100%;
+	height: -webkit-fill-available;
 }
 body {
 	background-color: $light;
 	font-family: "Montserrat", sans-serif;
+	min-height: 100vh;
+	/* mobile viewport bug fix */
+	min-height: -webkit-fill-available;
 }
 // pływający rzycisk
 
