@@ -14,14 +14,11 @@ $red: rgb(214, 22, 64);
 html {
 	font-size: 62.5%;
 	scroll-behavior: smooth;
-	height: -webkit-fill-available;
+	height: -webkit-fill-avaiable;
 }
 body {
 	background-color: $light;
 	font-family: "Montserrat", sans-serif;
-	min-height: 100vh;
-	/* mobile viewport bug fix */
-	min-height: -webkit-fill-available;
 }
 // pływający rzycisk
 
@@ -246,6 +243,7 @@ body {
 	.hero-img {
 		position: relative;
 		height: 100vh;
+		height: -webkit-fill-avaiable;
 		background-image: url("../img/headingMala.jpg");
 		background-position: center;
 		background-size: cover;
