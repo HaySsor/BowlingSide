@@ -274,10 +274,14 @@ body {
   color: #333;
 }
 
-.header .hero-img {
-  position: relative;
+.header {
   height: 100vh;
   height: -webkit-fill-avaiable;
+}
+
+.header .hero-img {
+  position: relative;
+  height: 100%;
   background-image: url("../img/headingMala.jpg");
   background-position: center;
   background-size: cover;
