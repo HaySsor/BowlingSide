@@ -242,12 +242,10 @@ body {
 }
 // homee
 .header {
-	height: 100%;
-	height: -webkit-fill-avaiable;
-
 	.hero-img {
 		position: relative;
-		height: 100%;
+		height: 100vh;
+		min-height: 90vh;
 		height: -webkit-fill-avaiable;
 		background-image: url("../img/headingMala.jpg");
 		background-position: center;
