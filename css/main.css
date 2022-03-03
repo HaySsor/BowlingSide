@@ -275,7 +275,7 @@ body {
 }
 
 .header {
-  height: 100vh;
+  height: 90vh;
   height: -webkit-fill-avaiable;
 }
 
@@ -336,7 +336,7 @@ body {
   padding: 1em;
   bottom: 0.2em;
   left: 50%;
-  bottom: 0.5em;
+  bottom: 5%;
   -webkit-transform: translate(-50%);
           transform: translate(-50%);
 }
