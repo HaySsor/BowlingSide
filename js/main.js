@@ -5,6 +5,12 @@ const navid = document.getElementById("nav");
 const phone = document.getElementById("phone");
 const icon = document.getElementById("icon");
 
+const cardBox = document.querySelectorAll(".arrangements__boxs-box");
+// const cardTitle = document.querySelector(".arrangements__boxs-box-title");
+// const cardInfo = document.querySelector(".arrangements__boxs-box-card");
+
+const quesIcon = document.querySelectorAll(".fa-question-circle");
+
 // Navigarion List
 const burgerMenu = () => {
 	burger.classList.toggle("hamburger--active");
@@ -43,6 +49,23 @@ const addShadow = () => {
 const togglePhonebox = () => {
 	phone.classList.toggle("show");
 };
+
+const showCard = () => {
+	quesIcon.forEach(item => {
+		item.addEventListener("click", e => {
+			const title = e.target.previousElementSibling;
+			const card = e.target.nextElementSibling;
+			console.log(e.target);
+
+			if (e.target.matches(".fa-question-circle")) {
+				title.classList.toggle("hidden");
+				card.classList.toggle("show-card");
+			}
+		});
+	});
+};
+
+showCard();
 
 window.addEventListener("scroll", addShadow);
 

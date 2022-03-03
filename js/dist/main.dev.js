@@ -5,7 +5,11 @@ var navlist = document.querySelectorAll(".link");
 var burger = document.getElementById("burger");
 var navid = document.getElementById("nav");
 var phone = document.getElementById("phone");
-var icon = document.getElementById("icon"); // Navigarion List
+var icon = document.getElementById("icon");
+var cardBox = document.querySelectorAll(".arrangements__boxs-box"); // const cardTitle = document.querySelector(".arrangements__boxs-box-title");
+// const cardInfo = document.querySelector(".arrangements__boxs-box-card");
+
+var quesIcon = document.querySelectorAll(".fa-question-circle"); // Navigarion List
 
 var burgerMenu = function burgerMenu() {
   burger.classList.toggle("hamburger--active");
@@ -39,6 +43,22 @@ var togglePhonebox = function togglePhonebox() {
   phone.classList.toggle("show");
 };
 
+var showCard = function showCard() {
+  quesIcon.forEach(function (item) {
+    item.addEventListener("click", function (e) {
+      var title = e.target.previousElementSibling;
+      var card = e.target.nextElementSibling;
+      console.log(e.target);
+
+      if (e.target.matches(".fa-question-circle")) {
+        title.classList.toggle("hidden");
+        card.classList.toggle("show-card");
+      }
+    });
+  });
+};
+
+showCard();
 window.addEventListener("scroll", addShadow);
 burger.addEventListener("click", burgerMenu);
 icon.addEventListener("click", togglePhonebox);
