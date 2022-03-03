@@ -19,8 +19,9 @@ html {
 body {
 	background-color: $light;
 	font-family: "Montserrat", sans-serif;
-	height: 100vh;
-	height: -webkit-fill-avaiable;
+	min-height: 100vh;
+	/* mobile viewport bug fix */
+	min-height: -webkit-fill-available;
 }
 // pływający rzycisk
 
@@ -246,7 +247,7 @@ body {
 		position: relative;
 		height: 100vh;
 		min-height: 90vh;
-		height: -webkit-fill-avaiable;
+		min-height: -webkit-fill-available;
 		background-image: url("../img/headingMala.jpg");
 		background-position: center;
 		background-size: cover;
