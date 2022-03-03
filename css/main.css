@@ -16,6 +16,7 @@ html {
 body {
   background-color: #f5f0f0;
   font-family: "Montserrat", sans-serif;
+  height: 100vh;
   height: -webkit-fill-avaiable;
 }
 
@@ -275,7 +276,7 @@ body {
 }
 
 .header {
-  height: 90vh;
+  height: 90%;
   height: -webkit-fill-avaiable;
 }
 
@@ -336,7 +337,7 @@ body {
   padding: 1em;
   bottom: 0.2em;
   left: 50%;
-  bottom: 5%;
+  bottom: 0%;
   -webkit-transform: translate(-50%);
           transform: translate(-50%);
 }
