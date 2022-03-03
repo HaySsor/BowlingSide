@@ -282,6 +282,7 @@ body {
 .header .hero-img {
   position: relative;
   height: 100%;
+  height: -webkit-fill-avaiable;
   background-image: url("../img/headingMala.jpg");
   background-position: center;
   background-size: cover;
@@ -335,6 +336,7 @@ body {
   padding: 1em;
   bottom: 0.2em;
   left: 50%;
+  bottom: 0.5em;
   -webkit-transform: translate(-50%);
           transform: translate(-50%);
 }
