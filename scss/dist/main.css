@@ -238,6 +238,7 @@ body {
   align-items: center;
   flex-direction: column;
   min-height: 100vh;
+  min-height: -webkit-fill-available;
   color: #f5f0f0;
   padding: 10px;
   text-align: center;
