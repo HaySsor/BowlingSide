@@ -278,8 +278,7 @@ body {
 
 .header .hero-img {
   position: relative;
-  height: 100vh;
-  min-height: 90vh;
+  min-height: 100vh;
   min-height: -webkit-fill-available;
   background-image: url("../img/headingMala.jpg");
   background-position: center;
