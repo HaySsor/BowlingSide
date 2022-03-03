@@ -332,7 +332,7 @@ body {
   font-size: 3rem;
   position: absolute;
   padding: 1em;
-  bottom: 0.2em;
+  bottom: 10%;
   left: 50%;
   -webkit-transform: translate(-50%);
           transform: translate(-50%);
