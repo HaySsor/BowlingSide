@@ -16,6 +16,7 @@ html {
 body {
   background-color: #f5f0f0;
   font-family: "Montserrat", sans-serif;
+  height: -webkit-fill-avaiable;
 }
 
 .contact__box {
