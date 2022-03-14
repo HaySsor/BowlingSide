@@ -28,8 +28,8 @@ body {
 
 .contact__box {
 	position: fixed;
-	bottom: 20px;
-	right: 10px;
+	bottom: 30px;
+	right: 30px;
 	background-color: #333;
 	border-radius: 40px;
 	text-align: center;
@@ -639,7 +639,7 @@ body {
 						border-radius: 15px;
 					}
 				}
-				.fa-arrow-right {
+				.icon{
 					display: none;
 				}
 			}
@@ -675,6 +675,7 @@ body {
 		font-size: 2rem;
 		text-align: center;
 		color: #ec0b43;
+		margin-top: 3rem;
 	}
 }
 .arrow-rotate {

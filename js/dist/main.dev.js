@@ -7,11 +7,19 @@ var navid = document.getElementById("nav");
 var phone = document.getElementById("phone");
 var icon = document.getElementById("icon");
 var navDesktop = document.querySelectorAll(".nav__desktop-item");
-var cardBox = document.querySelectorAll(".arrangements__boxs-box"); // const cardTitle = document.querySelector(".arrangements__boxs-box-title");
-// const cardInfo = document.querySelector(".arrangements__boxs-box-card");
-
+var cardBox = document.querySelectorAll(".arrangements__boxs-box");
 var quesIcon = document.querySelectorAll(".fa-question-circle");
-var planningArrows = document.querySelectorAll(".fa-arrow-right"); // Navigarion List
+var allIcon = document.querySelectorAll(".icon");
+var planningBtn = document.querySelector(".icon1");
+var planningPhoto = document.querySelector(".planning__box-planning-info-photo");
+var finanseBtn = document.querySelector(".icon3");
+var finansePhoto = document.querySelector(".planning__box-finances-info-photo");
+var lanesBtn = document.querySelector(".icon2");
+var lanesPhoto = document.querySelector(".planning__box-lanes-info-photo");
+var arrangementsBtn = document.querySelector(".icon4");
+var arrangementsPhoto = document.querySelector(".planning__box-arrangements-info-photo");
+var equipmentBtn = document.querySelector(".icon5");
+var equipmentPhoto = document.querySelector(".planning__box-equipment-info-photo"); // Navigarion List
 
 var burgerMenu = function burgerMenu() {
   burger.classList.toggle("hamburger--active");
@@ -61,18 +69,41 @@ var showCard = function showCard() {
 };
 
 var showPlaningPhoto = function showPlaningPhoto() {
-  planningArrows.forEach(function (item) {
+  allIcon.forEach(function (item) {
     item.addEventListener("click", function (e) {
-      console.log(e.target.previousElementSibling);
-      var photo = e.target.previousElementSibling;
-      if (e.target.matches(".fa-arrow-right")) photo.classList.toggle("show-photo");
-      e.target.classList.toggle("arrow-rotate");
+      if (e.target.matches(".icon")) e.target.classList.toggle("arrow-rotate");
     });
   });
 };
 
 showCard();
 showPlaningPhoto();
+
+var planningToggle = function planningToggle() {
+  planningPhoto.classList.toggle("show-photo1");
+};
+
+var finanseToggle = function finanseToggle() {
+  finansePhoto.classList.toggle("show-photo2");
+};
+
+var linesToggle = function linesToggle() {
+  lanesPhoto.classList.toggle("show-photo3");
+};
+
+var arrangementsToggle = function arrangementsToggle() {
+  arrangementsPhoto.classList.toggle("show-photo4");
+};
+
+var equipmentToggle = function equipmentToggle() {
+  equipmentPhoto.classList.toggle("show-photo5");
+};
+
 window.addEventListener("scroll", addShadow);
 burger.addEventListener("click", burgerMenu);
 icon.addEventListener("click", togglePhonebox);
+planningBtn.addEventListener("click", planningToggle);
+lanesBtn.addEventListener("click", linesToggle);
+arrangementsBtn.addEventListener("click", arrangementsToggle);
+finanseBtn.addEventListener("click", finanseToggle);
+equipmentBtn.addEventListener("click", equipmentToggle);

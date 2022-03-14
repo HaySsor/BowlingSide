@@ -23,8 +23,8 @@ body {
 
 .contact__box {
   position: fixed;
-  bottom: 20px;
-  right: 10px;
+  bottom: 30px;
+  right: 30px;
   background-color: #333;
   border-radius: 40px;
   text-align: center;
@@ -576,7 +576,7 @@ body {
   height: 100%;
   border-radius: 15px;
 }
-.planning__box-planning-info .fa-arrow-right, .planning__box-lanes-info .fa-arrow-right, .planning__box-finances-info .fa-arrow-right, .planning__box-arrangements-info .fa-arrow-right, .planning__box-equipment-info .fa-arrow-right {
+.planning__box-planning-info .icon, .planning__box-lanes-info .icon, .planning__box-finances-info .icon, .planning__box-arrangements-info .icon, .planning__box-equipment-info .icon {
   display: none;
 }
 .planning__box-download {
@@ -607,6 +607,7 @@ body {
   font-size: 2rem;
   text-align: center;
   color: #ec0b43;
+  margin-top: 3rem;
 }
 
 .arrow-rotate {
@@ -1336,6 +1337,7 @@ body {
 @media (min-width: 1200px) {
   .nav__desktop {
     justify-content: flex-end;
+    z-index: 999;
   }
 
   .show-bgc {
@@ -1527,86 +1529,246 @@ body {
     padding: 1.5rem;
   }
   .planning__box {
+    height: 140rem;
     position: relative;
-    height: 200vh;
-    overflow: none;
   }
   .planning__box-text {
     font-size: 1.4rem;
   }
   .planning__box-middle {
+    position: absolute;
     margin-top: 1rem;
     margin-bottom: 1rem;
-    width: 100%;
-    position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 10;
+    z-index: 5;
   }
   .planning__box-middle img {
-    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 30%;
+    min-width: 60%;
+    width: 80%;
   }
   .planning__box-finances {
     position: absolute;
-    height: 30rem;
+    top: 20rem;
+    right: 27rem;
+    height: 25rem;
     width: 30%;
-    top: 20%;
-    left: 50%;
+    overflow: visible;
   }
   .planning__box-finances-info {
     position: relative;
   }
+  .planning__box-finances-info-text {
+    font-size: 1.4rem;
+  }
   .planning__box-finances-info-photo {
+    opacity: 0;
     position: absolute;
-    display: block;
+    width: 100%;
+    height: 22rem;
+    z-index: -1;
     top: 0;
     left: 0;
     bottom: 0;
     right: 0;
-    overflow: none;
-  }
-  .planning__box-finances-info-photo img {
-    width: 100%;
-    height: 27rem;
+    transform: translateX(0);
+    transition: transform 0.4s, opacity 0.6s;
   }
   .planning__box-finances-info .fa-arrow-right {
     display: block;
     position: absolute;
-    font-size: 10rem;
-    z-index: 10;
+    font-size: 2rem;
+    right: 0;
+    bottom: -5rem;
+    transition: transform 0.3s;
+    padding: 1.5rem;
+    cursor: pointer;
   }
   .planning__box-planning {
     position: absolute;
-    height: 30rem;
+    top: 30rem;
+    left: 5rem;
+    height: 25rem;
     width: 30%;
-    top: 30%;
-    left: 5%;
+    overflow: visible;
   }
-  .planning__box-equipment {
+  .planning__box-planning-info {
+    position: relative;
+  }
+  .planning__box-planning-info-text {
+    font-size: 1.4rem;
+  }
+  .planning__box-planning-info-photo {
+    opacity: 0;
     position: absolute;
-    height: 30rem;
-    width: 30%;
-    top: 60%;
-    left: 5%;
+    width: 100%;
+    height: 22rem;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    transform: translateX(0);
+    transition: transform 0.4s, opacity 0.6s;
+  }
+  .planning__box-planning-info .fa-arrow-down {
+    display: block;
+    position: absolute;
+    font-size: 2rem;
+    left: 0;
+    bottom: 0;
+    transition: transform 0.3s;
+    padding: 1.5rem;
+    cursor: pointer;
   }
   .planning__box-lanes {
     position: absolute;
-    height: 30rem;
+    top: 50rem;
+    right: -5rem;
+    height: 32rem;
     width: 30%;
-    top: 40%;
-    right: 0%;
+    overflow: visible;
+  }
+  .planning__box-lanes-info {
+    position: relative;
+  }
+  .planning__box-lanes-info-text {
+    font-size: 1.4rem;
+  }
+  .planning__box-lanes-info-photo {
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 20rem;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    transform: translateX(0);
+    transition: transform 0.4s, opacity 0.6s;
+  }
+  .planning__box-lanes-info .fa-arrow-down {
+    display: block;
+    position: absolute;
+    font-size: 2rem;
+    right: 0;
+    bottom: -1rem;
+    transition: transform 0.3s;
+    padding: 1.5rem;
+    cursor: pointer;
+    z-index: 6;
   }
   .planning__box-arrangements {
     position: absolute;
-    height: 30rem;
+    bottom: 5rem;
+    right: 20rem;
+    height: 38rem;
     width: 30%;
-    top: 60%;
-    right: 10%;
+    overflow: visible;
+  }
+  .planning__box-arrangements-info {
+    position: relative;
+  }
+  .planning__box-arrangements-info-text {
+    font-size: 1.4rem;
+  }
+  .planning__box-arrangements-info-photo {
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 35rem;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    transform: translateX(0);
+    transition: transform 0.4s, opacity 0.6s;
+  }
+  .planning__box-arrangements-info .fa-arrow-right {
+    display: block;
+    position: absolute;
+    font-size: 2rem;
+    right: 0;
+    bottom: -1rem;
+    transition: transform 0.3s;
+    padding: 1.5rem;
+    cursor: pointer;
+  }
+  .planning__box-equipment {
+    position: absolute;
+    bottom: 25rem;
+    left: 0rem;
+    height: 25rem;
+    width: 30%;
+    overflow: visible;
+  }
+  .planning__box-equipment-info {
+    position: relative;
+  }
+  .planning__box-equipment-info-text {
+    font-size: 1.4rem;
+  }
+  .planning__box-equipment-info-photo {
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 25rem;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    transform: translateX(0);
+    transition: transform 0.4s, opacity 0.6s;
+  }
+  .planning__box-equipment-info .fa-arrow-down {
+    display: block;
+    position: absolute;
+    font-size: 2rem;
+    left: 0;
+    bottom: -4.5rem;
+    transition: transform 0.3s;
+    padding: 1.5rem;
+    cursor: pointer;
+  }
+  .planning .pdf {
+    font-size: 2rem;
+    text-align: center;
+    color: #ec0b43;
+  }
+
+  .arrow-rotate {
+    transform: rotate(180deg);
+  }
+
+  .show-photo1 {
+    opacity: 1;
+    transform: translateY(250px) translateX(-100px);
+  }
+
+  .show-photo2 {
+    opacity: 1;
+    transform: translateX(370px);
+  }
+
+  .show-photo3 {
+    opacity: 1;
+    transform: translateY(320px) translateX(150px);
+  }
+
+  .show-photo4 {
+    opacity: 1;
+    transform: translateX(380px);
+  }
+
+  .show-photo5 {
+    opacity: 1;
+    transform: translateY(250px);
   }
 }
 @media (min-width: 1361px) {

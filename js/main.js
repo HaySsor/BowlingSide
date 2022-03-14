@@ -7,12 +7,31 @@ const icon = document.getElementById("icon");
 const navDesktop = document.querySelectorAll(".nav__desktop-item");
 
 const cardBox = document.querySelectorAll(".arrangements__boxs-box");
-// const cardTitle = document.querySelector(".arrangements__boxs-box-title");
-// const cardInfo = document.querySelector(".arrangements__boxs-box-card");
 
 const quesIcon = document.querySelectorAll(".fa-question-circle");
 
-const planningArrows = document.querySelectorAll(".fa-arrow-right");
+const allIcon = document.querySelectorAll(".icon");
+
+const planningBtn = document.querySelector(".icon1");
+const planningPhoto = document.querySelector(
+	".planning__box-planning-info-photo"
+);
+const finanseBtn = document.querySelector(".icon3");
+const finansePhoto = document.querySelector(
+	".planning__box-finances-info-photo"
+);
+const lanesBtn = document.querySelector(".icon2");
+const lanesPhoto = document.querySelector(".planning__box-lanes-info-photo");
+
+const arrangementsBtn = document.querySelector(".icon4");
+const arrangementsPhoto = document.querySelector(
+	".planning__box-arrangements-info-photo"
+);
+
+const equipmentBtn = document.querySelector(".icon5");
+const equipmentPhoto = document.querySelector(
+	".planning__box-equipment-info-photo"
+);
 
 // Navigarion List
 const burgerMenu = () => {
@@ -69,15 +88,9 @@ const showCard = () => {
 };
 
 const showPlaningPhoto = () => {
-	planningArrows.forEach(item => {
+	allIcon.forEach(item => {
 		item.addEventListener("click", e => {
-			console.log(e.target.previousElementSibling);
-
-			const photo = e.target.previousElementSibling;
-
-			if (e.target.matches(".fa-arrow-right"))
-				photo.classList.toggle("show-photo");
-			e.target.classList.toggle("arrow-rotate");
+			if (e.target.matches(".icon")) e.target.classList.toggle("arrow-rotate");
 		});
 	});
 };
@@ -85,7 +98,28 @@ const showPlaningPhoto = () => {
 showCard();
 showPlaningPhoto();
 
+const planningToggle = () => {
+	planningPhoto.classList.toggle("show-photo1");
+};
+const finanseToggle = () => {
+	finansePhoto.classList.toggle("show-photo2");
+};
+const linesToggle = () => {
+	lanesPhoto.classList.toggle("show-photo3");
+};
+const arrangementsToggle = () => {
+	arrangementsPhoto.classList.toggle("show-photo4");
+};
+const equipmentToggle = () => {
+	equipmentPhoto.classList.toggle("show-photo5");
+};
+
 window.addEventListener("scroll", addShadow);
 
 burger.addEventListener("click", burgerMenu);
 icon.addEventListener("click", togglePhonebox);
+planningBtn.addEventListener("click", planningToggle);
+lanesBtn.addEventListener("click", linesToggle);
+arrangementsBtn.addEventListener("click", arrangementsToggle);
+finanseBtn.addEventListener("click", finanseToggle);
+equipmentBtn.addEventListener("click", equipmentToggle);
