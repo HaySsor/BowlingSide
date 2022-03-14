@@ -16,6 +16,7 @@ body {
   background-color: #f5f0f0;
   font-family: "Montserrat", sans-serif;
   min-height: 100vh;
+  background-color: #eadeda;
   /* mobile viewport bug fix */
   min-height: -webkit-fill-available;
 }
@@ -35,11 +36,11 @@ body {
   justify-content: center;
   transition: transform 0.5s;
   transform: translate(150%, 150%) scale(0);
-  z-index: 99;
+  z-index: 110;
 }
 .contact__box-tittle {
   margin-bottom: 2em;
-  color: #d61640;
+  color: #ec0b43;
   font-size: 2rem;
 }
 .contact__box-phone {
@@ -48,12 +49,12 @@ body {
 }
 .contact__box-phone a {
   text-decoration: none;
-  color: #d61640;
+  color: #ec0b43;
   padding: 1.75em;
   cursor: pointer;
 }
 .contact__box-phone i {
-  color: #d61640;
+  color: #ec0b43;
   margin-right: -1.5em;
 }
 .contact__box-email {
@@ -62,12 +63,12 @@ body {
 }
 .contact__box-email a {
   text-decoration: none;
-  color: #d61640;
+  color: #ec0b43;
   padding: 1em;
   cursor: pointer;
 }
 .contact__box-email i {
-  color: #d61640;
+  color: #ec0b43;
   margin-right: -1em;
 }
 
@@ -79,16 +80,16 @@ body {
   position: fixed;
   bottom: 10px;
   right: 15px;
-  z-index: 99;
+  z-index: 115;
 }
 .contact-button i {
   font-size: 6rem;
-  color: #d61640;
+  color: #ec0b43;
   z-index: 11;
 }
 
 .redtext {
-  color: #d61640;
+  color: #ec0b43;
 }
 
 .wrapper {
@@ -104,7 +105,7 @@ body {
   background-color: transparent;
   border: 0;
   margin: 0;
-  z-index: 100;
+  z-index: 120;
   position: fixed;
 }
 .hamburger__box {
@@ -117,7 +118,7 @@ body {
 .hamburger__box-inner {
   width: 100%;
   height: 3px;
-  background-color: #d61640;
+  background-color: #ec0b43;
   position: absolute;
   left: 0;
   top: 50%;
@@ -127,7 +128,7 @@ body {
 .hamburger__box-inner::before, .hamburger__box-inner::after {
   width: 100%;
   height: 3px;
-  background-color: #d61640;
+  background-color: #ec0b43;
   position: absolute;
   content: "";
   left: 0;
@@ -180,7 +181,7 @@ body {
   top: 0;
   left: 0;
   transform: translateX(-110%);
-  z-index: 99;
+  z-index: 130;
   transition: transform 0.3s;
 }
 .navigation__list {
@@ -274,7 +275,7 @@ body {
   padding-top: 3rem;
   text-align: center;
   font-size: 3rem;
-  color: #d61640;
+  color: #ec0b43;
   margin-bottom: 1em;
 }
 
@@ -322,7 +323,7 @@ body {
   padding-right: 1em;
 }
 .aboudus__cardbox-card-tittle {
-  color: #d61640;
+  color: #ec0b43;
   font-size: 1.5rem;
   margin-bottom: 0.5em;
 }
@@ -343,11 +344,12 @@ body {
 .aboudus__photobox-photo {
   width: 50%;
   margin: 1em;
-  background-color: #e0e0e0;
   border-top-left-radius: 40%;
   border-top-right-radius: 40%;
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
+  background: linear-gradient(90deg, #bfb8ad, #f0f0f0);
+  box-shadow: 15px 15px 26px #808080, -5px -5px 30px #eadeda;
 }
 .aboudus__photobox-photo img {
   width: 100%;
@@ -359,13 +361,13 @@ body {
   font-size: 1.1rem;
 }
 .aboudus__photobox-tittle .name {
-  color: #d61640;
+  color: #ec0b43;
   font-size: 1.3rem;
 }
 .aboudus .team {
   font-size: 2rem;
   text-align: center;
-  color: #d61640;
+  color: #ec0b43;
 }
 
 .track {
@@ -373,8 +375,9 @@ body {
 }
 .track__box {
   margin: 0.5rem;
-  background-color: #e0e0e0;
-  border-radius: 15px;
+  border-radius: 20px;
+  background: linear-gradient(145deg, #bfb8ad, #f0f0f0);
+  box-shadow: 15px 15px 26px #808080, -15px -15px 26px #eadeda;
 }
 .track__box-text {
   text-align: center;
@@ -385,7 +388,7 @@ body {
   text-transform: uppercase;
   margin-top: 2rem;
   padding: 2.3rem 1rem;
-  color: #d61640;
+  color: #ec0b43;
 }
 .track__box-text-info {
   font-size: 1.4rem;
@@ -406,11 +409,11 @@ body {
 }
 .track__box-photo img {
   width: 100%;
-  border-radius: 15px;
+  border-radius: 20px;
 }
 .track__tittle {
   text-align: center;
-  color: #d61640;
+  color: #ec0b43;
   margin-top: 3rem;
   font-size: 2.5rem;
 }
@@ -471,23 +474,24 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  cursor: pointer;
   margin-bottom: 2rem;
   transition: height 0.4s;
+  background: linear-gradient(145deg, #bfb8ad, #f0f0f0);
+  box-shadow: 15px 15px 26px #808080, -15px -15px 26px #eadeda;
 }
 .arrangements__boxs-box-icon {
   position: absolute;
-  top: -40px;
-  right: -40px;
+  top: -15px;
+  right: -15px;
   font-size: 3rem;
-  color: #d61640;
-  padding: 4rem;
+  color: #ec0b43;
+  padding: 1.5rem;
   z-index: 100;
   cursor: pointer;
 }
 .arrangements__boxs-box-title {
   opacity: 1;
-  color: #d61640;
+  color: #ec0b43;
   transition: opacity 0.5s, transform 0.5s;
   font-size: 2rem;
 }
@@ -509,6 +513,7 @@ body {
 .arrangements__boxs-box-card-info {
   font-size: 1.4rem;
   margin-bottom: 0.7rem;
+  text-align: center;
 }
 .arrangements__boxs-box-card-list {
   padding: 2rem;
@@ -520,6 +525,96 @@ body {
 }
 .arrangements__boxs-box--three {
   height: 25rem;
+}
+
+.planning {
+  padding: 1.5rem;
+}
+.planning__box-text {
+  font-size: 1.4rem;
+}
+.planning__box-middle {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.planning__box-middle img {
+  width: 100%;
+}
+.planning__box-planning, .planning__box-lanes, .planning__box-finances, .planning__box-arrangements, .planning__box-equipment {
+  padding: 1.5rem;
+  background: linear-gradient(145deg, #bfb8ad, #f0f0f0);
+  box-shadow: 15px 15px 26px #808080, -15px -15px 26px #eadeda;
+  border-radius: 15px;
+  margin-bottom: 2rem;
+  overflow: hidden;
+}
+.planning__box-planning-info, .planning__box-lanes-info, .planning__box-finances-info, .planning__box-arrangements-info, .planning__box-equipment-info {
+  position: relative;
+}
+.planning__box-planning-info-tittle, .planning__box-lanes-info-tittle, .planning__box-finances-info-tittle, .planning__box-arrangements-info-tittle, .planning__box-equipment-info-tittle {
+  padding: 2rem;
+  text-align: center;
+  font-size: 1.6rem;
+  color: #ec0b43;
+}
+.planning__box-planning-info-text, .planning__box-lanes-info-text, .planning__box-finances-info-text, .planning__box-arrangements-info-text, .planning__box-equipment-info-text {
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 1.4rem;
+  margin-bottom: 2rem;
+}
+.planning__box-planning-info-photo, .planning__box-lanes-info-photo, .planning__box-finances-info-photo, .planning__box-arrangements-info-photo, .planning__box-equipment-info-photo {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+.planning__box-planning-info-photo img, .planning__box-lanes-info-photo img, .planning__box-finances-info-photo img, .planning__box-arrangements-info-photo img, .planning__box-equipment-info-photo img {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+}
+.planning__box-planning-info .fa-arrow-right, .planning__box-lanes-info .fa-arrow-right, .planning__box-finances-info .fa-arrow-right, .planning__box-arrangements-info .fa-arrow-right, .planning__box-equipment-info .fa-arrow-right {
+  display: none;
+}
+.planning__box-download {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.planning__box-download a {
+  margin: 1rem;
+  text-decoration: none;
+  color: #ec0b43;
+  font-size: 1.5rem;
+  padding: 10px 20px;
+  width: 40%;
+}
+.planning__box-download a:before {
+  position: absolute;
+  left: 20%;
+  width: 20px;
+  height: 20px;
+  color: #ec0b43;
+  content: url("../img/file-pdf-solid.svg");
+}
+.planning .pdf {
+  font-size: 2rem;
+  text-align: center;
+  color: #ec0b43;
+}
+
+.arrow-rotate {
+  transform: rotate(0);
+}
+
+.show-photo {
+  transform: translateX(0) scale(1);
 }
 
 .show-card {
@@ -595,7 +690,7 @@ body {
     height: 35rem;
   }
   .arrangements__boxs-box-icon {
-    right: -40px;
+    right: -20px;
     font-size: 4rem;
   }
   .arrangements__boxs-box-card-info {
@@ -848,6 +943,125 @@ body {
   .accessories__img-boxs img {
     height: 30rem;
   }
+
+  .arrangements__boxs {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .arrangements__boxs-box {
+    height: 30rem;
+    border-radius: 40px;
+  }
+  .arrangements__boxs-box-icon {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    font-size: 3rem;
+    color: #d61640;
+    padding: 2rem;
+    z-index: 100;
+  }
+  .arrangements__boxs-box-title {
+    opacity: 1;
+    color: #d61640;
+    transition: opacity 0.5s, transform 0.5s;
+    font-size: 2rem;
+  }
+  .arrangements__boxs-box-card {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 1em;
+    transition: opacity 0.5s, transform 0.5s;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    transform: scale(0);
+    text-align: left;
+  }
+  .arrangements__boxs-box-card-info {
+    font-size: 1.6rem;
+    margin-bottom: 0.7rem;
+  }
+  .arrangements__boxs-box-card-list {
+    padding: 2rem;
+    font-size: 1.5rem;
+    text-align: left;
+  }
+  .arrangements__boxs-box--two {
+    height: 40rem;
+  }
+  .arrangements__boxs-box--three {
+    height: 25rem;
+  }
+
+  .show-card {
+    opacity: 1;
+    transform: scale(1);
+    border-radius: 15px;
+  }
+
+  .hidden {
+    opacity: 0;
+    transform: scale(0);
+  }
+
+  .planning__box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .planning__box-text {
+    font-size: 1.4rem;
+  }
+  .planning__box-planning, .planning__box-lanes, .planning__box-finances, .planning__box-arrangements, .planning__box-equipment {
+    width: 45%;
+    margin-right: 2rem;
+  }
+  .planning__box-planning-info-tittle, .planning__box-lanes-info-tittle, .planning__box-finances-info-tittle, .planning__box-arrangements-info-tittle, .planning__box-equipment-info-tittle {
+    padding: 2rem;
+  }
+  .planning__box-planning-info-text, .planning__box-lanes-info-text, .planning__box-finances-info-text, .planning__box-arrangements-info-text, .planning__box-equipment-info-text {
+    font-size: 1.6rem;
+  }
+  .planning__box-download {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-top: 2rem;
+  }
+  .planning__box-download a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding: 10px 20px;
+    width: 22%;
+    border: 1px solid black;
+    border-radius: 40px;
+    height: 5rem;
+    text-align: center;
+  }
+  .planning__box-download a:before {
+    display: none;
+  }
+  .planning__box-download a:hover, .planning__box-download a:focus {
+    background-color: #ec0b43;
+    color: #fff;
+  }
+  .planning .pdf {
+    margin-top: 2rem;
+  }
 }
 @media (min-width: 922px) {
   .hamburger--active {
@@ -868,7 +1082,7 @@ body {
   }
   .contact__box-tittle {
     margin-bottom: 2em;
-    color: #d61640;
+    color: #ec0b43;
     font-size: 3rem;
   }
   .contact__box-phone {
@@ -998,7 +1212,8 @@ body {
     justify-content: center;
   }
   .track__box {
-    width: 49%;
+    width: 46%;
+    margin: 2rem;
     margin-bottom: 8rem;
   }
   .track__box-text {
@@ -1019,13 +1234,13 @@ body {
     color: #d61640;
   }
   .track__box-text-info {
-    font-size: 1.6rem;
+    font-size: 1.3rem;
   }
   .track__box-text-info--last {
-    font-size: 1.6rem;
+    font-size: 1.3rem;
   }
   .track__box-text-link {
-    margin-bottom: 1rem;
+    margin-bottom: 1.2rem;
   }
   .track__box-photo {
     margin-top: 1em;
@@ -1039,6 +1254,83 @@ body {
   .track__tittle {
     width: 100%;
     font-size: 3rem;
+  }
+
+  .arrangements {
+    padding: 1.5rem;
+  }
+  .arrangements__boxs {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+  }
+  .arrangements__boxs-box {
+    text-align: center;
+    position: relative;
+    width: 48%;
+    height: 40rem;
+    background-color: #e0e0e0;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 2rem;
+    margin-left: 1.5rem;
+    transition: height 0.4s;
+    background: linear-gradient(145deg, #bfb8ad, #f0f0f0);
+    box-shadow: 15px 15px 26px #808080, -15px -15px 26px #eadeda;
+  }
+  .arrangements__boxs-box-icon {
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    font-size: 3rem;
+    color: #ec0b43;
+    padding: 1.5rem;
+    z-index: 100;
+    cursor: pointer;
+  }
+  .arrangements__boxs-box-title {
+    opacity: 1;
+    color: #ec0b43;
+    transition: opacity 0.5s, transform 0.5s;
+    font-size: 2rem;
+  }
+  .arrangements__boxs-box-card {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 1em;
+    transition: opacity 0.5s, transform 0.5s;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    transform: scale(0);
+    text-align: left;
+  }
+  .arrangements__boxs-box-card-info {
+    font-size: 1.4rem;
+    margin-bottom: 0.7rem;
+    text-align: center;
+  }
+  .arrangements__boxs-box-card-list {
+    padding: 2rem;
+    font-size: 1.3rem;
+    text-align: left;
+  }
+  .show-card {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  .hidden {
+    opacity: 0;
+    transform: scale(0);
   }
 }
 @media (min-width: 1200px) {
@@ -1056,7 +1348,7 @@ body {
   }
 
   .aboudus__box {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
   .aboudus__box2-tittle {
     font-size: 2rem;
@@ -1145,10 +1437,10 @@ body {
   }
 
   .accessories__info-text {
-    font-size: 1.6rem;
+    font-size: 1.3rem;
   }
   .accessories__info-text-contakt {
-    font-size: 1.7rem;
+    font-size: 1.5rem;
   }
   .accessories__info-text .fa-facebook {
     font-size: 5rem;
@@ -1162,31 +1454,34 @@ body {
   }
   .arrangements__boxs {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
+    flex-wrap: wrap;
     align-items: center;
+    justify-content: space-around;
     padding: 1rem;
+    background-image: linear-gradient(90deg, rgba(224, 220, 220, 0.75), rgba(209, 34, 28, 0.438)), url(../img/pneumatyczny.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #bdd4e7;
+    border-radius: 15px;
   }
   .arrangements__boxs-box {
-    text-align: center;
-    position: relative;
-    width: 100%;
-    height: 25rem;
-    background-color: #e0e0e0;
-    border-radius: 15px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    cursor: pointer;
+    margin: 1em;
+    width: 33%;
+    height: 35rem;
     margin-bottom: 2rem;
-    transition: height 0.4s;
+    background: linear-gradient(145deg, #bfb8ad, #f0f0f0);
+    box-shadow: 15px 15px 26px #050505, -15px -15px 26px #ffffff00;
   }
   .arrangements__boxs-box-icon {
     position: absolute;
     top: 5px;
     right: 5px;
-    font-size: 1.8rem;
+    font-size: 3rem;
     color: #d61640;
+    pointer-events: none;
   }
   .arrangements__boxs-box-title {
     opacity: 1;
@@ -1208,7 +1503,7 @@ body {
     transform: scale(0);
   }
   .arrangements__boxs-box-card-info {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     margin-bottom: 0.7rem;
   }
   .arrangements__boxs-box-card-list {
@@ -1226,6 +1521,92 @@ body {
   }
   .arrangements__boxs-box--two:hover {
     height: 50rem;
+  }
+
+  .planning {
+    padding: 1.5rem;
+  }
+  .planning__box {
+    position: relative;
+    height: 200vh;
+    overflow: none;
+  }
+  .planning__box-text {
+    font-size: 1.4rem;
+  }
+  .planning__box-middle {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+  }
+  .planning__box-middle img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30%;
+  }
+  .planning__box-finances {
+    position: absolute;
+    height: 30rem;
+    width: 30%;
+    top: 20%;
+    left: 50%;
+  }
+  .planning__box-finances-info {
+    position: relative;
+  }
+  .planning__box-finances-info-photo {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    overflow: none;
+  }
+  .planning__box-finances-info-photo img {
+    width: 100%;
+    height: 27rem;
+  }
+  .planning__box-finances-info .fa-arrow-right {
+    display: block;
+    position: absolute;
+    font-size: 10rem;
+    z-index: 10;
+  }
+  .planning__box-planning {
+    position: absolute;
+    height: 30rem;
+    width: 30%;
+    top: 30%;
+    left: 5%;
+  }
+  .planning__box-equipment {
+    position: absolute;
+    height: 30rem;
+    width: 30%;
+    top: 60%;
+    left: 5%;
+  }
+  .planning__box-lanes {
+    position: absolute;
+    height: 30rem;
+    width: 30%;
+    top: 40%;
+    right: 0%;
+  }
+  .planning__box-arrangements {
+    position: absolute;
+    height: 30rem;
+    width: 30%;
+    top: 60%;
+    right: 10%;
   }
 }
 @media (min-width: 1361px) {

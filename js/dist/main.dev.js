@@ -6,10 +6,12 @@ var burger = document.getElementById("burger");
 var navid = document.getElementById("nav");
 var phone = document.getElementById("phone");
 var icon = document.getElementById("icon");
+var navDesktop = document.querySelectorAll(".nav__desktop-item");
 var cardBox = document.querySelectorAll(".arrangements__boxs-box"); // const cardTitle = document.querySelector(".arrangements__boxs-box-title");
 // const cardInfo = document.querySelector(".arrangements__boxs-box-card");
 
-var quesIcon = document.querySelectorAll(".fa-question-circle"); // Navigarion List
+var quesIcon = document.querySelectorAll(".fa-question-circle");
+var planningArrows = document.querySelectorAll(".fa-arrow-right"); // Navigarion List
 
 var burgerMenu = function burgerMenu() {
   burger.classList.toggle("hamburger--active");
@@ -58,7 +60,19 @@ var showCard = function showCard() {
   });
 };
 
+var showPlaningPhoto = function showPlaningPhoto() {
+  planningArrows.forEach(function (item) {
+    item.addEventListener("click", function (e) {
+      console.log(e.target.previousElementSibling);
+      var photo = e.target.previousElementSibling;
+      if (e.target.matches(".fa-arrow-right")) photo.classList.toggle("show-photo");
+      e.target.classList.toggle("arrow-rotate");
+    });
+  });
+};
+
 showCard();
+showPlaningPhoto();
 window.addEventListener("scroll", addShadow);
 burger.addEventListener("click", burgerMenu);
 icon.addEventListener("click", togglePhonebox);

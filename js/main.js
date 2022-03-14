@@ -4,12 +4,15 @@ const burger = document.getElementById("burger");
 const navid = document.getElementById("nav");
 const phone = document.getElementById("phone");
 const icon = document.getElementById("icon");
+const navDesktop = document.querySelectorAll(".nav__desktop-item");
 
 const cardBox = document.querySelectorAll(".arrangements__boxs-box");
 // const cardTitle = document.querySelector(".arrangements__boxs-box-title");
 // const cardInfo = document.querySelector(".arrangements__boxs-box-card");
 
 const quesIcon = document.querySelectorAll(".fa-question-circle");
+
+const planningArrows = document.querySelectorAll(".fa-arrow-right");
 
 // Navigarion List
 const burgerMenu = () => {
@@ -65,7 +68,22 @@ const showCard = () => {
 	});
 };
 
+const showPlaningPhoto = () => {
+	planningArrows.forEach(item => {
+		item.addEventListener("click", e => {
+			console.log(e.target.previousElementSibling);
+
+			const photo = e.target.previousElementSibling;
+
+			if (e.target.matches(".fa-arrow-right"))
+				photo.classList.toggle("show-photo");
+			e.target.classList.toggle("arrow-rotate");
+		});
+	});
+};
+
 showCard();
+showPlaningPhoto();
 
 window.addEventListener("scroll", addShadow);
 

@@ -210,4 +210,145 @@
 			}
 		}
 	}
+	.arrangements {
+		&__boxs {
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			flex-wrap: wrap;
+			align-items: center;
+
+			&-box {
+				height: 30rem;
+				border-radius: 40px;
+
+				&-icon {
+					position: absolute;
+					top: -5px;
+					right: -5px;
+					// padding: 2rem;
+					font-size: 3rem;
+					color: rgb(214, 22, 64);
+					padding: 2rem;
+					z-index: 100;
+				}
+
+				&-title {
+					opacity: 1;
+					color: rgb(214, 22, 64);
+					transition: opacity 0.5s, transform 0.5s;
+					font-size: 2rem;
+				}
+				&-card {
+					position: absolute;
+					top: 0;
+					bottom: 0;
+					left: 0;
+					right: 0;
+					padding: 1em;
+					transition: opacity 0.5s, transform 0.5s;
+					display: flex;
+					align-items: center;
+					flex-direction: column;
+					justify-content: center;
+					transform: scale(0);
+					text-align: left;
+
+					&-info {
+						font-size: 1.6rem;
+						margin-bottom: 0.7rem;
+					}
+					&-list {
+						padding: 2rem;
+						font-size: 1.5rem;
+						text-align: left;
+						// list-style: none;
+					}
+				}
+			}
+			&-box--two {
+				height: 40rem;
+			}
+			&-box--three {
+				height: 25rem;
+			}
+		}
+	}
+	.show-card {
+		opacity: 1;
+		transform: scale(1);
+		border-radius: 15px;
+	}
+
+	.hidden {
+		opacity: 0;
+		transform: scale(0);
+	}
+
+	.planning {
+		&__box {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			&-text {
+				font-size: 1.4rem;
+			}
+			&-planning,
+			&-lanes,
+			&-finances,
+			&-arrangements,
+			&-equipment {
+				width: 45%;
+				margin-right: 2rem;
+
+				&-info {
+					
+					&-tittle {
+						padding: 2rem;
+						
+					}
+					&-text {
+						
+						font-size: 1.6rem;
+						
+					}
+				}
+			}
+			&-download {
+				position: relative;
+				display: flex;
+				flex-direction: row;
+				flex-wrap: wrap;
+				justify-content: flex-start;
+				margin-top: 2rem;
+
+				a {
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					margin: 1rem;
+					text-decoration: none;
+					font-size: 1.5rem;
+					padding: 10px 20px;
+					width: 22%;
+					border: 1px solid black;
+					border-radius: 40px;
+					height: 5rem;
+					text-align: center;
+				}
+
+				a:before {
+					display: none;
+				}
+
+				a:hover, a:focus {
+					background-color: #ec0b43;
+					color: #fff;
+				}
+			}
+		}
+		.pdf{
+			margin-top: 2rem;
+		}
+	}
 }

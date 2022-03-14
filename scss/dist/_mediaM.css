@@ -180,4 +180,123 @@
   .accessories__img-boxs img {
     height: 30rem;
   }
+
+  .arrangements__boxs {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .arrangements__boxs-box {
+    height: 30rem;
+    border-radius: 40px;
+  }
+  .arrangements__boxs-box-icon {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    font-size: 3rem;
+    color: #d61640;
+    padding: 2rem;
+    z-index: 100;
+  }
+  .arrangements__boxs-box-title {
+    opacity: 1;
+    color: #d61640;
+    transition: opacity 0.5s, transform 0.5s;
+    font-size: 2rem;
+  }
+  .arrangements__boxs-box-card {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 1em;
+    transition: opacity 0.5s, transform 0.5s;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    transform: scale(0);
+    text-align: left;
+  }
+  .arrangements__boxs-box-card-info {
+    font-size: 1.6rem;
+    margin-bottom: 0.7rem;
+  }
+  .arrangements__boxs-box-card-list {
+    padding: 2rem;
+    font-size: 1.5rem;
+    text-align: left;
+  }
+  .arrangements__boxs-box--two {
+    height: 40rem;
+  }
+  .arrangements__boxs-box--three {
+    height: 25rem;
+  }
+
+  .show-card {
+    opacity: 1;
+    transform: scale(1);
+    border-radius: 15px;
+  }
+
+  .hidden {
+    opacity: 0;
+    transform: scale(0);
+  }
+
+  .planning__box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .planning__box-text {
+    font-size: 1.4rem;
+  }
+  .planning__box-planning, .planning__box-lanes, .planning__box-finances, .planning__box-arrangements, .planning__box-equipment {
+    width: 45%;
+    margin-right: 2rem;
+  }
+  .planning__box-planning-info-tittle, .planning__box-lanes-info-tittle, .planning__box-finances-info-tittle, .planning__box-arrangements-info-tittle, .planning__box-equipment-info-tittle {
+    padding: 2rem;
+  }
+  .planning__box-planning-info-text, .planning__box-lanes-info-text, .planning__box-finances-info-text, .planning__box-arrangements-info-text, .planning__box-equipment-info-text {
+    font-size: 1.6rem;
+  }
+  .planning__box-download {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-top: 2rem;
+  }
+  .planning__box-download a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding: 10px 20px;
+    width: 22%;
+    border: 1px solid black;
+    border-radius: 40px;
+    height: 5rem;
+    text-align: center;
+  }
+  .planning__box-download a:before {
+    display: none;
+  }
+  .planning__box-download a:hover, .planning__box-download a:focus {
+    background-color: #ec0b43;
+    color: #fff;
+  }
+  .planning .pdf {
+    margin-top: 2rem;
+  }
 }

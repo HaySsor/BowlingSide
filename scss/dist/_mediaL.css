@@ -17,7 +17,7 @@
   }
   .contact__box-tittle {
     margin-bottom: 2em;
-    color: #d61640;
+    color: #ec0b43;
     font-size: 3rem;
   }
   .contact__box-phone {
@@ -147,7 +147,8 @@
     justify-content: center;
   }
   .track__box {
-    width: 49%;
+    width: 46%;
+    margin: 2rem;
     margin-bottom: 8rem;
   }
   .track__box-text {
@@ -168,13 +169,13 @@
     color: #d61640;
   }
   .track__box-text-info {
-    font-size: 1.6rem;
+    font-size: 1.3rem;
   }
   .track__box-text-info--last {
-    font-size: 1.6rem;
+    font-size: 1.3rem;
   }
   .track__box-text-link {
-    margin-bottom: 1rem;
+    margin-bottom: 1.2rem;
   }
   .track__box-photo {
     margin-top: 1em;
@@ -188,6 +189,83 @@
   .track__tittle {
     width: 100%;
     font-size: 3rem;
+  }
+
+  .arrangements {
+    padding: 1.5rem;
+  }
+  .arrangements__boxs {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+  }
+  .arrangements__boxs-box {
+    text-align: center;
+    position: relative;
+    width: 48%;
+    height: 40rem;
+    background-color: #e0e0e0;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 2rem;
+    margin-left: 1.5rem;
+    transition: height 0.4s;
+    background: linear-gradient(145deg, #bfb8ad, #f0f0f0);
+    box-shadow: 15px 15px 26px #808080, -15px -15px 26px #eadeda;
+  }
+  .arrangements__boxs-box-icon {
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    font-size: 3rem;
+    color: #ec0b43;
+    padding: 1.5rem;
+    z-index: 100;
+    cursor: pointer;
+  }
+  .arrangements__boxs-box-title {
+    opacity: 1;
+    color: #ec0b43;
+    transition: opacity 0.5s, transform 0.5s;
+    font-size: 2rem;
+  }
+  .arrangements__boxs-box-card {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 1em;
+    transition: opacity 0.5s, transform 0.5s;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    transform: scale(0);
+    text-align: left;
+  }
+  .arrangements__boxs-box-card-info {
+    font-size: 1.4rem;
+    margin-bottom: 0.7rem;
+    text-align: center;
+  }
+  .arrangements__boxs-box-card-list {
+    padding: 2rem;
+    font-size: 1.3rem;
+    text-align: left;
+  }
+  .show-card {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  .hidden {
+    opacity: 0;
+    transform: scale(0);
   }
 }
 @media (min-width: 1200px) {
@@ -205,7 +283,7 @@
   }
 
   .aboudus__box {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
   .aboudus__box2-tittle {
     font-size: 2rem;
@@ -294,10 +372,10 @@
   }
 
   .accessories__info-text {
-    font-size: 1.6rem;
+    font-size: 1.3rem;
   }
   .accessories__info-text-contakt {
-    font-size: 1.7rem;
+    font-size: 1.5rem;
   }
   .accessories__info-text .fa-facebook {
     font-size: 5rem;
@@ -311,31 +389,34 @@
   }
   .arrangements__boxs {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
+    flex-wrap: wrap;
     align-items: center;
+    justify-content: space-around;
     padding: 1rem;
+    background-image: linear-gradient(90deg, rgba(224, 220, 220, 0.75), rgba(209, 34, 28, 0.438)), url(../img/pneumatyczny.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #bdd4e7;
+    border-radius: 15px;
   }
   .arrangements__boxs-box {
-    text-align: center;
-    position: relative;
-    width: 100%;
-    height: 25rem;
-    background-color: #e0e0e0;
-    border-radius: 15px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    cursor: pointer;
+    margin: 1em;
+    width: 33%;
+    height: 35rem;
     margin-bottom: 2rem;
-    transition: height 0.4s;
+    background: linear-gradient(145deg, #bfb8ad, #f0f0f0);
+    box-shadow: 15px 15px 26px #050505, -15px -15px 26px #ffffff00;
   }
   .arrangements__boxs-box-icon {
     position: absolute;
     top: 5px;
     right: 5px;
-    font-size: 1.8rem;
+    font-size: 3rem;
     color: #d61640;
+    pointer-events: none;
   }
   .arrangements__boxs-box-title {
     opacity: 1;
@@ -357,7 +438,7 @@
     transform: scale(0);
   }
   .arrangements__boxs-box-card-info {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     margin-bottom: 0.7rem;
   }
   .arrangements__boxs-box-card-list {
@@ -375,6 +456,22 @@
   }
   .arrangements__boxs-box--two:hover {
     height: 50rem;
+  }
+
+  .planning {
+    padding: 1.5rem;
+  }
+  .planning__box-text {
+    font-size: 1.4rem;
+  }
+
+  .arrow-rotate {
+    transform: rotate(180deg);
+  }
+
+  .show-photo {
+    opacity: 1;
+    transform: translateX(400px);
   }
 }
 @media (min-width: 1361px) {
