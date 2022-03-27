@@ -128,7 +128,7 @@
   }
   .aboudus__photobox-photo {
     display: flex;
-    width: 100%;
+    width: 33%;
     margin: 1em;
     background-color: #e0e0e0;
     border-radius: 40px;
@@ -136,9 +136,10 @@
     border-bottom-left-radius: 45%;
   }
   .aboudus__photobox-photo img {
-    width: 50%;
+    width: 100%;
     height: 100%;
-    border-radius: 50%;
+    transform: translate(-2%);
+    min-width: 10rem;
   }
   .aboudus__photobox-tittle {
     text-align: center;
@@ -152,20 +153,54 @@
     font-size: 2rem;
   }
 
-  .track {
-    margin: 1.2rem;
+  .track .box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .track__box {
+    width: 46%;
+    margin: 1rem;
+    margin-bottom: 3rem;
+    height: 65rem;
+  }
+  .track__box-text {
+    text-align: center;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
   .track__box-text-tittle {
-    font-size: 1.8rem;
+    display: block;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    margin-top: 2rem;
+    padding: 2.5rem 1rem;
+    padding-top: 3rem;
   }
   .track__box-text-info {
-    font-size: 1.6rem;
+    font-size: 1.3rem;
   }
-  .track__box-text-link a {
-    margin: 1.6rem;
+  .track__box-text-info--last {
+    font-size: 1.25rem;
+  }
+  .track__box-text-link {
+    margin-bottom: 1.3rem;
+  }
+  .track__box-photo {
+    margin-top: 1em;
+    height: 50%;
+  }
+  .track__box-photo img {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
   }
   .track__tittle {
-    margin: 3.5rem 0;
+    width: 100%;
+    font-size: 3rem;
   }
 
   .accessories__info-text {
@@ -197,13 +232,11 @@
     top: -5px;
     right: -5px;
     font-size: 3rem;
-    color: #d61640;
     padding: 2rem;
     z-index: 100;
   }
   .arrangements__boxs-box-title {
     opacity: 1;
-    color: #d61640;
     transition: opacity 0.5s, transform 0.5s;
     font-size: 2rem;
   }
@@ -292,11 +325,37 @@
   .planning__box-download a:before {
     display: none;
   }
-  .planning__box-download a:hover, .planning__box-download a:focus {
+  .planning__box-download a:hover,
+.planning__box-download a:focus {
     background-color: #ec0b43;
     color: #fff;
   }
   .planning .pdf {
     margin-top: 2rem;
+  }
+
+  .galleryPhoto__btn-box-button {
+    font-size: 1.4rem;
+  }
+  .galleryPhoto__box {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .galleryPhoto__box-item {
+    width: 47%;
+    height: 450px;
+    margin: 1rem;
+  }
+  .galleryPhoto__box .show-photo1 {
+    position: relative;
+  }
+  .galleryPhoto__box-item:first-child {
+    position: relative;
+    width: 100%;
+    z-index: 2;
+  }
+  .galleryPhoto__box-item:last-child {
+    width: 100%;
   }
 }

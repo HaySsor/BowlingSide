@@ -78,7 +78,7 @@
 
   .show-bgc {
     background-color: #e0455f;
-    background-image: linear-gradient(147deg, #ca2c2c 0%, #44000b 74%);
+    background-image: linear-gradient(147deg, #ef271b 0%, #007ea7 80%);
   }
 
   .header .hero-text h1 {
@@ -123,9 +123,10 @@
   .aboudus__cardbox-card .fas {
     font-size: 2.3rem;
   }
+  .aboudus__photobox {
+    width: 100%;
+  }
   .aboudus__photobox-photo img {
-    width: 50%;
-    height: 100%;
     border-radius: 50%;
   }
   .aboudus__photobox-tittle {
@@ -139,56 +140,6 @@
     background-image: url("../img/headingduza.jpg");
     background-position: 100%;
     height: 100vh;
-  }
-
-  .track .box {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  .track__box {
-    width: 46%;
-    margin: 2rem;
-    margin-bottom: 8rem;
-  }
-  .track__box-text {
-    text-align: center;
-    height: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  .track__box-text-tittle {
-    display: block;
-    font-size: 2rem;
-    margin-bottom: 1rem;
-    text-transform: uppercase;
-    margin-top: 2rem;
-    padding: 2.5rem 1rem;
-    padding-top: 3rem;
-    color: #d61640;
-  }
-  .track__box-text-info {
-    font-size: 1.3rem;
-  }
-  .track__box-text-info--last {
-    font-size: 1.3rem;
-  }
-  .track__box-text-link {
-    margin-bottom: 1.2rem;
-  }
-  .track__box-photo {
-    margin-top: 1em;
-    height: 50%;
-  }
-  .track__box-photo img {
-    width: 100%;
-    height: 100%;
-    border-radius: 15px;
-  }
-  .track__tittle {
-    width: 100%;
-    font-size: 3rem;
   }
 
   .arrangements {
@@ -214,7 +165,7 @@
     margin-bottom: 2rem;
     margin-left: 1.5rem;
     transition: height 0.4s;
-    background: linear-gradient(145deg, #bfb8ad, #f0f0f0);
+    background: linear-gradient(145deg, #007ea7, #262322);
     box-shadow: 15px 15px 26px #808080, -15px -15px 26px #eadeda;
   }
   .arrangements__boxs-box-icon {
@@ -222,14 +173,12 @@
     top: -15px;
     right: -15px;
     font-size: 3rem;
-    color: #ec0b43;
     padding: 1.5rem;
     z-index: 100;
     cursor: pointer;
   }
   .arrangements__boxs-box-title {
     opacity: 1;
-    color: #ec0b43;
     transition: opacity 0.5s, transform 0.5s;
     font-size: 2rem;
   }
@@ -276,11 +225,15 @@
 
   .show-bgc {
     background-color: #e0455f;
-    background-image: linear-gradient(147deg, #ca2c2c 0%, #44000b 74%);
   }
 
   .logo {
     left: 1.2em;
+  }
+
+  .section-title {
+    padding-top: 7rem;
+    margin-top: 7rem;
   }
 
   .aboudus__box {
@@ -290,7 +243,6 @@
     font-size: 2rem;
   }
   .aboudus__cardbox-card-tittle {
-    color: #d61640;
     font-size: 2.2rem;
     margin-bottom: 0.7em;
   }
@@ -306,23 +258,29 @@
     font-size: 3.2rem;
   }
   .aboudus__photobox {
+    width: 100%;
     margin-bottom: 2em;
     height: 15rem;
+    justify-content: center;
+    flex-wrap: wrap;
   }
   .aboudus__photobox-photo {
     display: flex;
-    width: 100%;
-    height: 70%;
+    width: 30%;
+    height: 90%;
     margin: 1em;
     background-color: #e0e0e0;
     border-radius: 40px;
-    border-top-left-radius: 45%;
-    border-bottom-left-radius: 45%;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    margin-left: 2rem;
   }
   .aboudus__photobox-photo img {
-    width: 33%;
-    height: 100%;
+    width: 30%;
+    height: 12rem;
     border-radius: 50%;
+    margin-left: 0;
+    min-width: 12rem;
   }
   .aboudus__photobox-tittle {
     text-align: center;
@@ -396,7 +354,7 @@
     align-items: center;
     justify-content: space-around;
     padding: 1rem;
-    background-image: linear-gradient(90deg, rgba(224, 220, 220, 0.75), rgba(209, 34, 28, 0.438)), url(../img/pneumatyczny.jpg);
+    background-image: linear-gradient(90deg, rgba(224, 220, 220, 0.75), rgba(12, 12, 12, 0.438)), url(../img/pneumatyczny.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -408,7 +366,6 @@
     width: 33%;
     height: 35rem;
     margin-bottom: 2rem;
-    background: linear-gradient(145deg, #bfb8ad, #f0f0f0);
     box-shadow: 15px 15px 26px #050505, -15px -15px 26px #ffffff00;
   }
   .arrangements__boxs-box-icon {
@@ -416,12 +373,10 @@
     top: 5px;
     right: 5px;
     font-size: 3rem;
-    color: #d61640;
     pointer-events: none;
   }
   .arrangements__boxs-box-title {
     opacity: 1;
-    color: #d61640;
     transition: opacity 0.5s, transform 0.5s;
   }
   .arrangements__boxs-box-card {
@@ -520,6 +475,7 @@
     transition: transform 0.3s;
     padding: 1.5rem;
     cursor: pointer;
+    color: #ef271b;
   }
   .planning__box-planning {
     position: absolute;
@@ -557,6 +513,7 @@
     transition: transform 0.3s;
     padding: 1.5rem;
     cursor: pointer;
+    color: #ef271b;
   }
   .planning__box-lanes {
     position: absolute;
@@ -599,6 +556,7 @@
     padding: 1.5rem;
     cursor: pointer;
     z-index: 6;
+    color: #ef271b;
   }
   .planning__box-arrangements {
     position: absolute;
@@ -636,6 +594,7 @@
     transition: transform 0.3s;
     padding: 1.5rem;
     cursor: pointer;
+    color: #ef271b;
   }
   .planning__box-equipment {
     position: absolute;
@@ -673,11 +632,17 @@
     transition: transform 0.3s;
     padding: 1.5rem;
     cursor: pointer;
+    color: #ef271b;
   }
   .planning .pdf {
     font-size: 2rem;
     text-align: center;
     color: #ec0b43;
+  }
+  .planning .planning__box-download {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .arrow-rotate {
@@ -708,6 +673,51 @@
     opacity: 1;
     transform: translateY(250px);
   }
+
+  svg {
+    display: block;
+    margin: -1rem;
+  }
+
+  .galleryPhoto {
+    padding: 1.5rem;
+    margin-top: 0;
+    height: 100%;
+    background-color: #485461;
+    background-image: linear-gradient(340deg, #a7bbd1 0%, #28313b 74%);
+    border-radius: 15px;
+  }
+  .galleryPhoto .section-title-gallery {
+    color: #ef271b;
+  }
+  .galleryPhoto__btn-box-button {
+    display: none;
+  }
+  .galleryPhoto__box {
+    position: relative;
+    display: grid;
+    grid-template-columns: 3fr repeat(3, 2fr);
+    grid-row: repeat(12, 2fr);
+    gap: 1rem;
+  }
+  .galleryPhoto__box-item {
+    position: relative;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 300px;
+    border-radius: 15px;
+    margin-bottom: 1rem;
+    transition: transform 0.4s;
+  }
+  .galleryPhoto__box .show-photo1 {
+    position: relative;
+  }
+  .galleryPhoto__box-item:hover {
+    transform: scale(1.5);
+    z-index: 3;
+  }
 }
 @media (min-width: 1361px) {
   .nav__desktop {
@@ -731,7 +741,6 @@
     font-size: 2rem;
   }
   .aboudus__cardbox-card-tittle {
-    color: #d61640;
     font-size: 2rem;
     margin-bottom: 0.7em;
   }

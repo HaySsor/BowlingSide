@@ -19,7 +19,10 @@ var lanesPhoto = document.querySelector(".planning__box-lanes-info-photo");
 var arrangementsBtn = document.querySelector(".icon4");
 var arrangementsPhoto = document.querySelector(".planning__box-arrangements-info-photo");
 var equipmentBtn = document.querySelector(".icon5");
-var equipmentPhoto = document.querySelector(".planning__box-equipment-info-photo"); // Navigarion List
+var equipmentPhoto = document.querySelector(".planning__box-equipment-info-photo");
+var allPhoto = document.querySelectorAll(".galleryPhoto__box-item");
+var galleryBtn = document.querySelector(".galleryPhoto__btn-box-button");
+var firstPhoto = document.querySelector(".first"); // Navigarion List
 
 var burgerMenu = function burgerMenu() {
   burger.classList.toggle("hamburger--active");
@@ -99,6 +102,19 @@ var equipmentToggle = function equipmentToggle() {
   equipmentPhoto.classList.toggle("show-photo5");
 };
 
+function galleryShow() {
+  allPhoto.forEach(function (item) {
+    item.classList.toggle("show-photo1");
+  });
+
+  if (firstPhoto.classList.contains("show-photo1")) {
+    console.log(firstPhoto);
+    galleryBtn.textContent = "Showaj";
+  } else {
+    galleryBtn.textContent = "Pokaż";
+  }
+}
+
 window.addEventListener("scroll", addShadow);
 burger.addEventListener("click", burgerMenu);
 icon.addEventListener("click", togglePhonebox);
@@ -107,3 +123,4 @@ lanesBtn.addEventListener("click", linesToggle);
 arrangementsBtn.addEventListener("click", arrangementsToggle);
 finanseBtn.addEventListener("click", finanseToggle);
 equipmentBtn.addEventListener("click", equipmentToggle);
+galleryBtn.addEventListener("click", galleryShow);
